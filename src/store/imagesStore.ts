@@ -12,22 +12,22 @@ export interface PhotosStoreInterface {
 
 const imagesKulture: Image[] = [
   {
-    src: '../assets/images/kulture/00005.jpg',
+    src: '/kulture/00005',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, YEARS_KEYS.Y1989_1991],
     title: ''
   },
   {
-    src: '../assets/images/kulture/00006.jpg',
+    src: '/kulture/00006',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: ''
   },
   {
-    src: '../assets/images/kulture/00009.jpg',
+    src: '/kulture/00009',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.VERTEP, YEARS_KEYS.Y1989_1991],
     title: ''
   },
   {
-    src: '../assets/images/kulture/00010.jpg',
+    src: '/kulture/00010',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, YEARS_KEYS.Y1989_1991],
     title: ''
   }
@@ -35,12 +35,12 @@ const imagesKulture: Image[] = [
 
 const imagesSalina: Image[] = [
   {
-    src: '../assets/images/salina/00001.jpg',
+    src: '/salina/00001',
     keys: [IMAGES_KEYS.SALINA, YEARS_KEYS.Y1989_1991],
     title: ''
   },
   {
-    src: '../assets/images/salina/00002.jpg',
+    src: '/salina/00002',
     keys: [IMAGES_KEYS.SALINA, YEARS_KEYS.Y1989_1991],
     title: ''
   }
@@ -48,7 +48,7 @@ const imagesSalina: Image[] = [
 
 const imagesZluka: Image[] = [
   {
-    src: '../assets/images/zluka_1990/00015.jpg',
+    src: '/zluka_1990/00015',
     keys: [IMAGES_KEYS.ZLUKA, YEARS_KEYS.Y1989_1991],
     title: ''
   }

@@ -19,3 +19,5 @@ export enum YEARS_KEYS {
   Y1989_1991 = '1989-2000',
   Y2000_PRESENT = '2000-*',
 }
+
+export const STATIC_FOLDER_PATH = '/static/photos'
