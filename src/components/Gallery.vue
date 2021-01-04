@@ -1,17 +1,6 @@
 <template>
   <div class="hello">
-    <v-gallery :images="imagesSrcPreview"
-               :index="index"
-               :options="options"
-               @close="index = null"
-    />
-    <div
-      class="image"
-      v-for="(image, imageIndex) in imagesSrc"
-      :key="imageIndex"
-      @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
-    >titleProperty</div>
+    <vue-picture-swipe :items="imagesSrc"></vue-picture-swipe>
   </div>
 </template>
 
@@ -38,7 +27,13 @@ export default class HelloWorld extends Vue {
   get imagesSrc () {
     return this.getImages.map(image => {
       console.log(image.src)
-      return STATIC_FOLDER_PATH + image.src + '_prev.jpg'
+      return {
+        src: STATIC_FOLDER_PATH + image.src + '.jpg',
+        thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
+        w: 600,
+        h: 400,
+        title: image.title
+      }
     })
     // return [
     //   'https://dummyimage.com/800/ffffff/000000',
@@ -50,7 +45,7 @@ export default class HelloWorld extends Vue {
 
   get imagesSrcPreview () {
     return this.getImages.map(image => {
-      return STATIC_FOLDER_PATH + image.src + '.jpg'
+      return { src: STATIC_FOLDER_PATH + image.src + '.jpg' }
     })
   }
 }

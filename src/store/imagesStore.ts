@@ -50,7 +50,7 @@ const imagesZluka: Image[] = [
   {
     src: '/zluka_1990/00015',
     keys: [IMAGES_KEYS.ZLUKA, YEARS_KEYS.Y1989_1991],
-    title: ''
+    title: 'Злука'
   }
 ]
 
