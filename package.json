@@ -9,13 +9,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "blueimp-gallery": "^3.3.0",
     "core-js": "^3.6.5",
-    "file-system": "^2.2.2",
-    "fs-extra": "^9.0.1",
+    "vlightbox": "^2.0.2",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
-    "vue-gallery": "^2.0.1",
+    "vue-light-gallery": "^1.0.1",
     "vue-picture-swipe": "^2.0.2",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",

@@ -29,4 +29,8 @@
     }
   }
 }
+
+body {
+  background-color: black;
+}
 </style>

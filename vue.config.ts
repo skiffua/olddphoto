@@ -23,12 +23,5 @@ module.exports = {
         }
       }
     ]
-  },
-  node: {
-    fs: 'empty'
-  },
-  build: {
-    assetsPublicPath: '/',
-    assetsSubDirectory: 'static'
   }
 }
