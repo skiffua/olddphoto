@@ -14,82 +14,82 @@ export interface PhotosStoreInterface {
 
 const imagesPavlishak: Image[] = [
   {
-    src: '/pavlishak/00001',
+    src: '/pavl/00001',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Монастир ЧСВВ (1990р., осінь)', 'Відновлення могил ченців; посвячення меміоріальної дошки з нагоди прийняття новіціату (чернечого стану) Андрея Шептицького')
   },
   {
-    src: '/pavlishak/00002',
+    src: '/pavl/00002',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Саліна (1990-06-24)', 'Поминальний похід в урочище Саліна')
   },
   {
-    src: '/pavlishak/00003',
+    src: '/pavl/00003',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Мотастир ЧСВВ (~1990р.)', 'Процесія')
   },
   {
-    src: '/pavlishak/00004',
+    src: '/pavl/00004',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.VERTEP, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Мотастир ЧСВВ (1990р.)', 'Ченці')
   },
   {
-    src: '/pavlishak/00005',
+    src: '/pavl/00005',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп')
   },
   {
-    src: '/pavlishak/00006',
+    src: '/pavl/00006',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Свято Миколая (1990р., грудень)', 'Ой хто-хто, Миколая любить...')
   },
   {
-    src: '/pavlishak/00008',
+    src: '/pavl/00008',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Концерт (~1989)', 'Концерт')
   },
   {
-    src: '/pavlishak/00009',
+    src: '/pavl/00009',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп')
   },
   {
-    src: '/pavlishak/00011',
+    src: '/pavl/00011',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Саліна (1990-06-24)', 'Поминальний похід в урочище Саліна')
   },
   {
-    src: '/pavlishak/00012',
+    src: '/pavl/00012',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Колишня тюрма НКВД (1990-06-24)', 'Біля приміщення колишньої тюрми НКВД')
   },
   {
-    src: '/pavlishak/00013',
+    src: '/pavl/00013',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Цвинтар (1990р., кінець літа)', 'Поминальний похід на могилу хорунжого УГА В. Стецишина')
   },
   {
-    src: '/pavlishak/00014',
+    src: '/pavl/00014',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Саліна (1990-06-24)', 'Поминальний похід в урочище Саліна')
   },
   {
-    src: '/pavlishak/00015',
+    src: '/pavl/00015',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Ланцюг єдності (1990-01-22)', 'Добромильчани приймають участь в акції "Злука". Ланцюг єдності, Миколаївський район')
   },
   {
-    src: '/pavlishak/00016',
+    src: '/pavl/00016',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Саліна (~1990р.)', 'Поминальний похід в урочище Саліна')
   },
   {
-    src: '/pavlishak/00017',
+    src: '/pavl/00017',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Виступ (м. Добромиль, 1990-01-22)', 'Виступ представниці Союзу українок')
   },
   {
-    src: '/pavlishak/00018',
+    src: '/pavl/00018',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
     title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп')
   }
