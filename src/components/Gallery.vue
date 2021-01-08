@@ -59,8 +59,8 @@ export default class HelloWorld extends Vue {
     return this.getImages.map((image, index) => ({
       src: STATIC_FOLDER_PATH + image.src + '.jpg',
       thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
-      w: 1280,
-      h: 822,
+      w: image.w ? image.w : 1280,
+      h: image.w ? image.w : 822,
       title: image.title
     })
     )

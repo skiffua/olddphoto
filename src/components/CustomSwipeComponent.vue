@@ -128,8 +128,6 @@ export default {
 
           linkEl = figureEl.children[0] // <a> element
 
-            console.log('linkEl', linkEl)
-
           size = linkEl.getAttribute('data-size').split('x')
 
           // create slide object
@@ -333,7 +331,7 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
   .my-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -343,7 +341,13 @@ export default {
     text-align: right;
   }
   .pswp__caption__center {
-    text-align: center
+    max-width: 700px;
+    text-align: center;
+    p {
+      padding: 0 5px;
+      border-right: 1px solid white;
+      border-left: 1px solid white;
+    }
   }
   .pswp__button--rotate {
     background: url(./rotate.png) 0 0 no-repeat;

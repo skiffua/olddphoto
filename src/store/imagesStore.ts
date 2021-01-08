@@ -5,6 +5,8 @@ export interface Image {
   src: string;
   keys: (IMAGES_KEYS | YEARS_KEYS)[];
   title: string;
+  w?: number;
+  h?: number;
   description?: string;
 }
 
@@ -66,7 +68,9 @@ const imagesPavlishak: Image[] = [
   {
     src: '/pavl/00013',
     keys: [IMAGES_KEYS.KULTURE, IMAGES_KEYS.KONCERT, IMAGES_KEYS.CHILDREN, YEARS_KEYS.Y1989_1991],
-    title: figcaptionGenerator('Цвинтар (1990р., кінець літа)', 'Поминальний похід на могилу хорунжого УГА В. Стецишина')
+    title: figcaptionGenerator('Цвинтар (1990р., кінець літа)', 'Поминальний похід на могилу хорунжого УГА В. Стецишина'),
+    w: 822,
+    h: 1280
   },
   {
     src: '/pavl/00014',
