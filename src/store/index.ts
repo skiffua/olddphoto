@@ -11,7 +11,7 @@ export default new Vuex.Store<PhotosStoreInterface>({
   actions: {
   },
   getters: {
-    getImagesByFilter: (state): Image[] => {
+    getImagesByFilter: (state) => (filtersKeys: string[] = []): Image[] => {
       return state.images
     }
   }

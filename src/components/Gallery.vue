@@ -5,7 +5,7 @@
       <button class="gallery-buttons-keys"
               :class="{'gallery-buttons-keys--isActive': isSomeFilterChecked}"
       >Усі | All</button>
-      <button class="gallery-buttons-keys">Пошук | Search</button>
+      <button class="gallery-buttons-keys">Фільтр | Filter</button>
     </div>
     <div class="gallery-control-panel gallery-control-panel--keys">
       <button
@@ -31,6 +31,18 @@
     </div>
 
     <custom-swipe-component :items="imagesSrc" :options="options"></custom-swipe-component>
+
+    <div class="gallery-control-panel gallery-control-panel--pagination">
+      <button
+        v-for="(paginationButton, index) in 5"
+        :key="index"
+        class="gallery-buttons-keys gallery-buttons-keys--keys"
+        :class="{'gallery-buttons-keys--isActive': true}"
+        :value="index+1"
+      >
+        {{index + 1}}
+      </button>
+    </div>
   </div>
 </template>
 
@@ -50,7 +62,7 @@ export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
 
   @Getter('getImagesByFilter')
-  getImages!: Image[];
+  getImages!: (filters: string[]) => Image[];
 
   filterButtonsKeys = IMAGES_KEYS
 
@@ -81,7 +93,7 @@ export default class HelloWorld extends Vue {
     }
 
     get imagesSrc () {
-      return this.getImages.map(image => ({
+      return this.getImages([]).map(image => ({
         src: STATIC_FOLDER_PATH + image.src + '.jpg',
         thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
         w: image.w ? image.w : 1280,
