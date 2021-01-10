@@ -1,6 +1,5 @@
 <template>
   <div class="gallery">
-    {{activeImagesPage}}
     <div class="gallery-control-panel">
       <button class="gallery-buttons-keys"
               :class="{'gallery-buttons-keys--isActive': isSomeFilterChecked}"
@@ -38,9 +37,12 @@
       <custom-swipe-component :items="imagesSrc" :options="options"></custom-swipe-component>
     </div>
 
-    <div v-else>
+    <div
+      v-if="!imagesByFilter.length && !isFiltered"
+      class="no-photo-finded"
+    >
+      <img src="../assets/no-photos.svg">
       <p>Вибачте, але світлин за параметрами фільтра не знайдено...</p>
-      <p>-</p>
       <p>Sorry, but images by filter keys, weren't found...</p>
     </div>
 
@@ -199,6 +201,13 @@ export default class HelloWorld extends Vue {
       margin-bottom: 8px;
       :not(:last-child ) {
         margin-right: 5px;
+      }
+    }
+    .no-photo-finded {
+      padding: 20px 0;
+      color: burlywood;
+      img {
+        width: 150px;
       }
     }
   }
