@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Галерея | Gallery</router-link> |
-      <router-link to="/about">Проект... | About project...</router-link>
+      <router-link to="/">Галерея | Gallery</router-link> -
+      <router-link to="/about">Проект | About project</router-link>
     </div>
     <router-view/>
   </div>
@@ -10,11 +10,17 @@
 
 <style lang="scss">
 #app {
+  padding: 8px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #nav {
@@ -24,6 +30,7 @@
   a {
     font-weight: bold;
     color: dimgrey;
+    text-decoration: none;
 
     &.router-link-exact-active {
       color: white;
@@ -32,6 +39,16 @@
 }
 
 body {
+  height: 100vh;
   background-color: black;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 </style>

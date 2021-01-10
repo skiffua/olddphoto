@@ -33,7 +33,10 @@
       </button>
     </div>
 
-    <div v-if="imagesByFilter.length">
+    <div
+      v-if="imagesByFilter.length"
+      class="gallery-control-panel gallery-control-panel--swipe-block"
+    >
       <custom-swipe-component :items="imagesSrc" :options="options"></custom-swipe-component>
     </div>
 
@@ -179,6 +182,10 @@ export default class HelloWorld extends Vue {
 
 <style scoped lang="scss">
   .gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     .gallery-buttons-keys {
       background: black;
       color: white;
@@ -203,6 +210,13 @@ export default class HelloWorld extends Vue {
         margin-right: 5px;
       }
     }
+    .gallery-control-panel {
+      &--swipe-block {
+        flex-grow: 1;
+        overflow: auto;
+      }
+    }
+
     .no-photo-finded {
       padding: 20px 0;
       color: burlywood;

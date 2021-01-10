@@ -15,3 +15,12 @@ import Gallery from '@/components/Gallery.vue' // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+
+<style lang="scss">
+  .home {
+    height: 100%;
+    display: flex;
+    flex-grow: 0;
+    overflow: auto;
+  }
+</style>
