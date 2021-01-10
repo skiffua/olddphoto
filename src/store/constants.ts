@@ -1,23 +1,37 @@
-export enum IMAGES_KEYS {
-  PRIEST = 'священник',
-  UGKC = 'УГКЦ',
-  TEACHER = 'вчитель',
-  PEOPLE = 'люди',
-  BUILDING = 'будинки',
-  CHILDREN = 'діти',
-  ZLUKA = 'Злука 1990',
-  KULTURE = 'культура',
-  KONCERT = 'концерт',
-  VERTEP = 'вертеп',
-  SALINA = 'Саліна',
+export enum IMAGES_KEYS_TYPE {
+  PEOPLE = 'PEOPLE',
+  BUILDING = 'BUILDING',
+  CHILDREN = 'CHILDREN',
+  ZLUKA = 'ZLUKA',
+  KULTURE = 'KULTURE',
+  KONCERT = 'KONCERT',
+  VERTEP = 'VERTEP',
+  SALINA = 'SALINA',
+  TEACHER = 'TEACHER',
+  PRIEST = 'PRIEST',
+  UGKC = 'UGKC',
 }
 
-export enum YEARS_KEYS {
+export enum YEARS_KEYS_TYPE {
   Y1920_1939 = '1920-1939',
   Y1939_1945 = '1939-1945',
   Y1945_1989 = '1945-1989',
-  Y1989_1991 = '1989-2000',
+  Y1989_2000 = '1989-2000',
   Y2000_PRESENT = '2000-*',
+}
+
+export const IMAGES_KEYS = {
+  [IMAGES_KEYS_TYPE.PEOPLE]: 'люди',
+  [IMAGES_KEYS_TYPE.BUILDING]: 'будинки',
+  [IMAGES_KEYS_TYPE.CHILDREN]: 'діти',
+  [IMAGES_KEYS_TYPE.ZLUKA]: 'Злука 1990',
+  [IMAGES_KEYS_TYPE.KULTURE]: 'культура',
+  [IMAGES_KEYS_TYPE.KONCERT]: 'концерт',
+  [IMAGES_KEYS_TYPE.VERTEP]: 'вертеп',
+  [IMAGES_KEYS_TYPE.SALINA]: 'Саліна',
+  [IMAGES_KEYS_TYPE.TEACHER]: 'вчитель',
+  [IMAGES_KEYS_TYPE.PRIEST]: 'священник',
+  [IMAGES_KEYS_TYPE.UGKC]: 'УГКЦ'
 }
 
 export const STATIC_FOLDER_PATH = '/static/photos'
