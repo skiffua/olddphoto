@@ -35,7 +35,7 @@ export const IMAGES_YEARS = {
 export const IMAGES_KEYS = {
   [IMAGES_KEYS_TYPE.PEOPLE]: 'люди',
   [IMAGES_KEYS_TYPE.FAMOUS]: 'відомий',
-  [IMAGES_KEYS_TYPE.BUILDING]: 'будинки',
+  [IMAGES_KEYS_TYPE.BUILDING]: 'будівлі',
   [IMAGES_KEYS_TYPE.CHILDREN]: 'діти',
   [IMAGES_KEYS_TYPE.KULTURE]: 'культура',
   [IMAGES_KEYS_TYPE.SPORT]: 'спорт',

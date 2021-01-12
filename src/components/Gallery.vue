@@ -94,7 +94,7 @@ export default class HelloWorld extends Vue {
     this.isFiltered = false
   }
 
-  imagesByPageCount = 5
+  imagesByPageCount = 8
 
   activeImagesPage = 1
 
@@ -233,6 +233,7 @@ export default class HelloWorld extends Vue {
      .gallery-info-block {
        display: inline-block;
        position: absolute;
+       right: 0;
        padding: 0 20px;
        font-size: 11px;
        color: white;
