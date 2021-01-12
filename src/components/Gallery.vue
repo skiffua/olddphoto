@@ -72,7 +72,7 @@ import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
 import { Getter } from 'vuex-class'
 import CustomSwipeComponent from './CustomSwipeComponent.vue'
 import { Image } from '@/store/imagesStore'
-import { IMAGES_KEYS, STATIC_FOLDER_PATH, YEARS_KEYS_TYPE } from '@/store/constants'
+import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '@/store/constants'
 
 @Component({
   components: {
@@ -112,7 +112,7 @@ export default class HelloWorld extends Vue {
 
   filterButtonsKeys = IMAGES_KEYS
 
-  filterButtonsYears = YEARS_KEYS_TYPE
+  filterButtonsYears = IMAGES_YEARS
 
   keysFilters = Object.keys(this.filterButtonsKeys).reduce((filtersObject, key) => {
     filtersObject[key] = {

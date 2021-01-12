@@ -6,7 +6,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00001',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.CHURCH,
       IMAGES_KEYS_TYPE.FAMOUS,
       IMAGES_KEYS_TYPE.UGKC
@@ -16,7 +16,7 @@ export const imagesGeneral: Image[] = [
       'о. Теодор Гораєцький (УГКЦ)',
       `Сімейний фотоальбом ${linkSourceGenerator('Артура Курцвеля', 'https://en.wikipedia.org/wiki/Arthur_Kurzweil')}</a>`),
     w: 822,
-    h: 1280,
+    h: 1210,
     year: 1930
   }
 ]
