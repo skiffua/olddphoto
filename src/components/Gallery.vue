@@ -10,7 +10,7 @@
         :disabled="isFiltered"
         @click="getfilteredImages"
       >Фільтр | Filter</button>
-      <div class="gallery-info-block"><i>На ресурсі розміщено <span>{{getImgsCount}}</span> світлин</i></div>
+      <div class="gallery-info-block"><i><span>{{getImgsCount}}</span> світлин</i></div>
     </div>
     <div class="gallery-control-panel gallery-control-panel--keys">
       <button
