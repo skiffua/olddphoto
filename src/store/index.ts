@@ -11,16 +11,21 @@ export default new Vuex.Store<PhotosStoreInterface>({
   actions: {
   },
   getters: {
-    getImagesByFilter: (state) => (filtersKeys: string[] = []): Image[] => {
+    getSortedImagesByYear: (state): Image[] => {
+      return state.images.sort((imageObject1: Image, imageObject2: Image) =>
+        imageObject1.year - imageObject2.year)
+    },
+
+    getImagesByFilter: (state, getters) => (filtersKeys: string[] = []): Image[] => {
       if (filtersKeys.length) {
-        return state.images.filter((image: Image) => {
+        return getters.getSortedImagesByYear.filter((image: Image) => {
           return image.keys.some((key: string) => {
             return filtersKeys.includes(key)
           })
         })
       }
 
-      return state.images
+      return getters.getSortedImagesByYear
     }
   }
 })

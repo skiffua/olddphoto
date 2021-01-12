@@ -3,6 +3,7 @@
     <div class="gallery-control-panel">
       <button class="gallery-buttons-keys"
               :class="{'gallery-buttons-keys--isActive': isSomeFilterChecked}"
+              @click="resetAllFilters"
       >Усі | All</button>
       <button
         class="gallery-buttons-keys"
@@ -86,7 +87,6 @@ export default class HelloWorld extends Vue {
 
   @Watch('imagesByFilter')
   holdOnWhileFiltering (): void {
-    console.log('change')
     this.isFiltered = false
   }
 
@@ -145,6 +145,16 @@ export default class HelloWorld extends Vue {
       } else {
         this.imagesByFilter = this.getImages([])
       }
+    }
+
+    resetAllFilters (): void {
+      Object.keys(this.keysFilters).forEach(key => {
+        this.keysFilters[key].isActive = false
+      })
+
+      Object.keys(this.yearsFilters).forEach(key => {
+        this.yearsFilters[key].isActive = false
+      })
     }
 
     get filteredImages (): string[] {

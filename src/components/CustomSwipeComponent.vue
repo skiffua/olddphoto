@@ -343,7 +343,7 @@ export default {
   .pswp__caption__center {
     max-width: 700px;
     text-align: center;
-    p {
+    div {
       padding: 0 5px;
       border-right: 1px solid white;
       border-left: 1px solid white;
