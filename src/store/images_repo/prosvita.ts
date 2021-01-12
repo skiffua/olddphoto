@@ -19,7 +19,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00003',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.CHURCH,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST
@@ -44,7 +44,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00005',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
@@ -56,7 +56,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00006',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
@@ -68,7 +68,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00008',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
@@ -80,26 +80,26 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00009',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1945_1989,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп'),
+    title: figcaptionGenerator('Хор', 'Добромильський хор. Період радянської окупації'),
     source: prosvitaSource,
-    year: 1990
+    year: 1970
   },
   {
     src: '/prosvita/00011',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1945_1989,
       IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.SALINA,
+      IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Саліна (1990-06-24)', 'Поминальний похід в урочище Саліна'),
+    title: figcaptionGenerator('Вистава (1988р.)', 'Шевченко "Катерина"'),
     source: prosvitaSource,
-    year: 1990
+    year: 1988
   },
   {
     src: '/prosvita/00012',
@@ -107,82 +107,82 @@ export const imagesProsvita: Image[] = [
       YEARS_KEYS_TYPE.Y1989_2000,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.PRIEST
+      IMAGES_KEYS_TYPE.KULTURE
     ],
-    title: figcaptionGenerator('Колишня тюрма НКВД (1990-06-24)', 'Біля приміщення колишньої тюрми НКВД'),
+    title: figcaptionGenerator('Хор', 'Період Незалежної України'),
     source: prosvitaSource,
-    year: 1990
+    year: 1999
   },
   {
     src: '/prosvita/00013',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.PEOPLE
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.KULTURE
     ],
-    title: figcaptionGenerator('Цвинтар (1990р., кінець літа)', 'Поминальний похід на могилу хорунжого УГА В. Стецишина'),
+    title: figcaptionGenerator('Хор (1928)', 'Хоровий гурток у Добромилі'),
     source: prosvitaSource,
-    year: 1990,
-    w: 822,
-    h: 1280
+    year: 1928
   },
   {
     src: '/prosvita/00014',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.ZAHID
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.KULTURE,
+      IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Саліна (1990-06-24)', 'Поминальний похід в урочище Саліна'),
+    title: figcaptionGenerator('Просвіта (1938)', 'Добромильська "Просвіта"'),
     source: prosvitaSource,
-    year: 1990
+    year: 1938
   },
   {
     src: '/prosvita/00015',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
-      IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.PEOPLE
-    ],
-    title: figcaptionGenerator('Ланцюг єдності (1990-01-22)', 'Добромильчани приймають участь в акції "Злука". Ланцюг єдності, Миколаївський район'),
-    source: prosvitaSource,
-    year: 1990
-  },
-  {
-    src: '/prosvita/00016',
-    keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.PEOPLE
-    ],
-    title: figcaptionGenerator('Саліна (~1990р.)', 'Поминальний похід в урочище Саліна'),
-    source: prosvitaSource,
-    year: 1990
-  },
-  {
-    src: '/prosvita/00017',
-    keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
-      IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.ZAHID
-    ],
-    title: figcaptionGenerator('Виступ (м. Добромиль, 1990-01-22)', 'Виступ представниці Союзу українок'),
-    source: prosvitaSource,
-    year: 1990
-  },
-  {
-    src: '/prosvita/00018',
-    keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
+      YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп'),
+    title: figcaptionGenerator('Гурток (1935р.)', 'Драматичний гурток'),
     source: prosvitaSource,
-    year: 1990
+    year: 1935
+  },
+  {
+    src: '/prosvita/00016',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.KULTURE,
+      IMAGES_KEYS_TYPE.ZAHID,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator('Просвіта (~1928р.)', 'Члени Просвіти'),
+    source: prosvitaSource,
+    year: 1928
+  },
+  {
+    src: '/prosvita/00017',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.KULTURE,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.ZAHID
+    ],
+    title: figcaptionGenerator('Світанок (1977р.)', 'Народна хорова капела'),
+    source: prosvitaSource,
+    year: 1977
+  },
+  {
+    src: '/prosvita/00018',
+    keys: [
+      YEARS_KEYS_TYPE.Y2000_PRESENT,
+      IMAGES_KEYS_TYPE.KULTURE,
+      IMAGES_KEYS_TYPE.ZAHID,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator('Світанок (2008р.)', 'Народна хорова капела'),
+    source: prosvitaSource,
+    year: 2008
   },
   {
     src: '/prosvita/00019',
@@ -192,7 +192,7 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп'),
+    title: figcaptionGenerator('Вистава (1990р.)', 'Шевченко "Великий льох'),
     source: prosvitaSource,
     year: 1990
   },
@@ -204,32 +204,18 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп'),
+    title: figcaptionGenerator('Композиція (1989р.)', 'Літературно-музична композиція "Іду з дитинства до Тараса'),
     source: prosvitaSource,
-    year: 1990
-  },
-  {
-    src: '/prosvita/00021',
-    keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
-      IMAGES_KEYS_TYPE.KULTURE,
-      IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.PEOPLE
-    ],
-    title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп'),
-    source: prosvitaSource,
-    year: 1990
+    year: 1989
   },
   {
     src: '/prosvita/00022',
     keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
-      IMAGES_KEYS_TYPE.KULTURE,
-      IMAGES_KEYS_TYPE.ZAHID,
+      YEARS_KEYS_TYPE.Y2000_PRESENT,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Вертеп (~1989р.)', 'Вертеп'),
+    title: figcaptionGenerator('Помаранчева революція (2004р.)', 'Учасники хорової капели "Світанок" під час помаранчевої революції'),
     source: prosvitaSource,
-    year: 1990
+    year: 2004
   }
 ]
