@@ -26,6 +26,10 @@ export default new Vuex.Store<PhotosStoreInterface>({
       }
 
       return getters.getSortedImagesByYear
+    },
+
+    getImagesCount: (state): number => {
+      return state.images.length
     }
   }
 })

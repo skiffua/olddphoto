@@ -10,6 +10,7 @@
         :disabled="isFiltered"
         @click="getfilteredImages"
       >Фільтр | Filter</button>
+      <div class="gallery-info-block"><i>На ресурсі розміщено <span>{{getImgsCount}}</span> світлин</i></div>
     </div>
     <div class="gallery-control-panel gallery-control-panel--keys">
       <button
@@ -84,6 +85,9 @@ export default class HelloWorld extends Vue {
 
   @Getter('getImagesByFilter')
   getImages!: (filters: string[]) => Image[];
+
+  @Getter('getImagesCount')
+  getImgsCount!: number;
 
   @Watch('imagesByFilter')
   holdOnWhileFiltering (): void {
@@ -221,10 +225,18 @@ export default class HelloWorld extends Vue {
       }
     }
     .gallery-control-panel {
+      position: relative;
       &--swipe-block {
         flex-grow: 1;
         overflow: auto;
       }
+     .gallery-info-block {
+       display: inline-block;
+       position: absolute;
+       padding: 0 20px;
+       font-size: 11px;
+       color: white;
+     }
     }
 
     .no-photo-finded {
