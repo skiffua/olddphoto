@@ -80,8 +80,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00001',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.BUILDING
+      IMAGES_KEYS_TYPE.SALINA
     ],
     title: figcaptionGenerator(
       'Трагедія Саліни (1941р., липень)',
@@ -93,8 +92,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00002',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.BUILDING
+      IMAGES_KEYS_TYPE.SALINA
     ],
     title: figcaptionGenerator(
       'Трагедія Саліни (1941р., липень)',
@@ -106,8 +104,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00003',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.BUILDING
+      IMAGES_KEYS_TYPE.SALINA
     ],
     title: figcaptionGenerator(
       'Трагедія Саліни (1941р., липень)',
@@ -119,8 +116,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00007',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.BUILDING
+      IMAGES_KEYS_TYPE.SALINA
     ],
     title: figcaptionGenerator(
       'Звільнення від більшовиків (1941р., липень)',
@@ -132,8 +128,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00009',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.BUILDING
+      IMAGES_KEYS_TYPE.SALINA
     ],
     title: figcaptionGenerator(
       'Трагедія Саліни (1941р., липень)',
@@ -145,8 +140,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00012',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
-      IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.BUILDING
+      IMAGES_KEYS_TYPE.SALINA
     ],
     title: figcaptionGenerator(
       'Трагедія Саліни (1941р., липень)',

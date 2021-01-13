@@ -160,5 +160,87 @@ export const imagesGeneral: Image[] = [
       'Демонстрація (1989р.)',
       'Українська демонстрація у Добромилі'),
     year: 1989
+  },
+  {
+    src: '/general/00020',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.PRIEST
+    ],
+    title: figcaptionGenerator(
+      'Княжпіль (~1938р.)',
+      'о. Петро Дутко (УГКЦ), Дмитро Хадай'),
+    year: 1938
+  },
+  {
+    src: '/general/00021',
+    keys: [
+      YEARS_KEYS_TYPE.Y1989_2000,
+      IMAGES_KEYS_TYPE.ZAHID,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator(
+      'Нижанковичі (1990)',
+      'Перезахоронення воїнів УПА 21.10.1990 в с. Нижанковичі'),
+    year: 1990
+  },
+  {
+    src: '/general/00022',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator(
+      'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
+      'Неідентифіковане фото'),
+    year: 1920
+  },
+  {
+    src: '/general/00023',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator(
+      'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
+      'Неідентифіковане фото'),
+    year: 1920
+  },
+  {
+    src: '/general/00024',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator(
+      'Перемишль (1938-41рр.?)',
+      'Вишкіл служби порятунку?'),
+    year: 1938
+  },
+  {
+    src: '/general/00025',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator(
+      'Добромиль? (1933)',
+      'Вечерниці жіночого кружка'),
+    year: 1933
+  },
+  {
+    src: '/general/00033',
+    keys: [
+      YEARS_KEYS_TYPE.Y1989_2000,
+      IMAGES_KEYS_TYPE.ZAHID,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SALINA
+    ],
+    title: figcaptionGenerator(
+      'Саліна (1990р.)',
+      'Поминальний похід на Саліну'),
+    year: 1990
   }
 ]
