@@ -7,7 +7,7 @@
     <p class="about about--description">Якщо у Вас є цікаві фото і Ви бажаєте ними поділитись, прошу надіслати їх на адресу електронної
       скриньки dobromyl.photo[равлик]gmail.com.</p>
     <p class="about about--description">Автор ідеї та розробка ресурсу - Олег Мушора.</p>
-    <p class="about about--description">Допомогти проекту - </p>
+    <p class="about about--description"><i>Допомогти проекту - 5169 3600 1000 8112</i></p>
   </div>
 </template>
 
