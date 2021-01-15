@@ -2,6 +2,7 @@
   <div>
     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
       <figure
+        class="figure"
         v-show="index === 0 || !singleThumbnail"
         itemprop="associatedMedia"
         itemscope
@@ -15,7 +16,7 @@
           :data-title="item.title">
           <img :src="item.thumbnail" :alt="item.alt" itemprop="thumbnail"/>
         </a>
-        <figcaption v-html="item.title"></figcaption>
+        <figcaption class="figcaption" v-html="item.title"></figcaption>
       </figure>
     </div>
 
@@ -359,10 +360,19 @@ export default {
   .pswp__button--rotate--right {
     background-position: -26px 10px;
   }
-  figure {
+  .figure {
     /*display: inline;*/
     max-width: 300px;
     border-bottom: 1px solid white;
     margin: 5px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*position: relative;*/
+    .figcaption {
+      height: 120px;
+      /*position: absolute;*/
+      /*top: 210px;*/
+    }
   }
 </style>

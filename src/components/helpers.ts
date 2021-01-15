@@ -5,7 +5,7 @@ export const figcaptionGenerator = (title: string, description?: string, source?
                 <b>${title}
                 </b>
             </span>
-            <div>
+            <div style="max-height: 100px;overflow: auto;">
               <p style="margin:10px 0 5px 0;font-size: 13px;text-align: left;color: white">${description}</p>
               <p style="margin:10px 0 5px 0;font-size: 12px;text-align: left;color: white">Джерело: ${source}</p>
             </div>`
