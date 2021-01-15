@@ -214,7 +214,7 @@ export const imagesProsvita: Image[] = [
       YEARS_KEYS_TYPE.Y2000_PRESENT,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Помаранчева революція (2004р.)', 'Учасники хорової капели "Світанок" під час помаранчевої революції'),
+    title: figcaptionGenerator('Помаранчева революція (2004р.)', 'Добромильчани під час помаранчевої революції'),
     source: prosvitaSource,
     year: 2004
   }

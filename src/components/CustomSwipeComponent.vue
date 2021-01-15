@@ -135,7 +135,8 @@ export default {
           item = {
             src: linkEl.getAttribute('href'),
             w: parseInt(size[0], 10),
-            h: parseInt(size[1], 10),
+            //  TODO need to check h: 0
+            h: 0,
             title: linkEl.getAttribute('data-title')
           }
 
@@ -362,6 +363,7 @@ export default {
   }
   .figure {
     /*display: inline;*/
+    width: 300px;
     max-width: 300px;
     border-bottom: 1px solid white;
     margin: 5px 5px 15px;
@@ -371,8 +373,8 @@ export default {
     /*position: relative;*/
     .figcaption {
       height: 120px;
-      /*position: absolute;*/
-      /*top: 210px;*/
+      display: flex;
+      flex-direction: column;
     }
   }
 </style>

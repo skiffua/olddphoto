@@ -10,7 +10,7 @@
         :disabled="isFiltered"
         @click="getfilteredImages"
       >Фільтр | Filter</button>
-      <div class="gallery-info-block"><i><span>{{getImgsCount}}</span> світлин</i></div>
+      <div class="gallery-info-block"><i><span>{{imagesByFilter.length}} / {{getImgsCount}}</span> світлин</i></div>
     </div>
     <div class="gallery-control-panel gallery-control-panel--keys">
       <button
@@ -39,7 +39,7 @@
       v-if="imagesByFilter.length"
       class="gallery-control-panel gallery-control-panel--swipe-block"
     >
-      <custom-swipe-component :items="imagesSrc" :options="options"></custom-swipe-component>
+      <custom-swipe-component :items="imagesSrc"></custom-swipe-component>
     </div>
 
     <div
@@ -134,69 +134,67 @@ export default class HelloWorld extends Vue {
     return filtersObject
   }, {})
 
-    options = {
-      rotationOn: true
-    }
+  turnOnOffKeyFilter (e, filterType): void {
+    this[filterType][e.target.value].isActive = !this[filterType][e.target.value].isActive
+  }
 
-    turnOnOffKeyFilter (e, filterType): void {
-      this[filterType][e.target.value].isActive = !this[filterType][e.target.value].isActive
+  getfilteredImages (): void {
+    if (this.filteredImages.length) {
+      this.isFiltered = true
+      this.imagesByFilter = this.getImages(this.filteredImages)
+    } else {
+      this.imagesByFilter = this.getImages([])
     }
+  }
 
-    getfilteredImages (): void {
-      if (this.filteredImages.length) {
-        this.isFiltered = true
-        this.imagesByFilter = this.getImages(this.filteredImages)
-      } else {
-        this.imagesByFilter = this.getImages([])
-      }
-    }
+  resetAllFilters (): void {
+    Object.keys(this.keysFilters).forEach(key => {
+      this.keysFilters[key].isActive = false
+    })
 
-    resetAllFilters (): void {
-      Object.keys(this.keysFilters).forEach(key => {
-        this.keysFilters[key].isActive = false
+    Object.keys(this.yearsFilters).forEach(key => {
+      this.yearsFilters[key].isActive = false
+    })
+  }
+
+  get filteredImages (): string[] {
+    const keysFilters: string[] = Object.keys(this.keysFilters)
+      .filter(keyFilter => this.keysFilters[keyFilter].isActive === true)
+      .map(keyFilter => keyFilter)
+    const yearsFilters: string[] = Object.keys(this.yearsFilters)
+      .filter(keyFilter => this.yearsFilters[keyFilter].isActive === true)
+      .map(keyFilter => keyFilter)
+
+    return [...keysFilters, ...yearsFilters]
+  }
+
+  get imagesSrc () {
+    return this.imagesByFilter
+      .slice(this.activeImagesPage * this.imagesByPageCount - this.imagesByPageCount,
+        this.activeImagesPage * this.imagesByPageCount)
+      .map(image => ({
+        src: STATIC_FOLDER_PATH + image.src + '.jpg',
+        thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
+        w: image.w ? image.w : 1280,
+        h: image.w ? image.w : 822,
+        title: image.title
       })
+      )
+  }
 
-      Object.keys(this.yearsFilters).forEach(key => {
-        this.yearsFilters[key].isActive = false
-      })
-    }
-
-    get filteredImages (): string[] {
-      const keysFilters: string[] = Object.keys(this.keysFilters)
-        .filter(keyFilter => this.keysFilters[keyFilter].isActive === true)
-        .map(keyFilter => keyFilter)
-      const yearsFilters: string[] = Object.keys(this.yearsFilters)
-        .filter(keyFilter => this.yearsFilters[keyFilter].isActive === true)
-        .map(keyFilter => keyFilter)
-
-      return [...keysFilters, ...yearsFilters]
-    }
-
-    get imagesSrc () {
-      return this.imagesByFilter
-        .slice(this.activeImagesPage * this.imagesByPageCount - this.imagesByPageCount,
-          this.activeImagesPage * this.imagesByPageCount)
-        .map(image => ({
-          src: STATIC_FOLDER_PATH + image.src + '.jpg',
-          thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
-          w: image.w ? image.w : 1280,
-          h: image.w ? image.w : 822,
-          title: image.title
-        })
-        )
-    }
-
-    get isSomeFilterChecked () {
-      return !Object.keys(this.keysFilters)
-        .some(filter => this.keysFilters[filter].isActive === true) && !Object.keys(this.yearsFilters)
-        .some(filter => this.yearsFilters[filter].isActive === true)
-    }
+  get isSomeFilterChecked () {
+    return !Object.keys(this.keysFilters)
+      .some(filter => this.keysFilters[filter].isActive === true) && !Object.keys(this.yearsFilters)
+      .some(filter => this.yearsFilters[filter].isActive === true)
+  }
 }
 </script>
 
 <style scoped lang="scss">
   .gallery {
     width: 100%;
+    max-width: 1550px;
+    margin: auto;
     height: 100%;
     display: flex;
     flex-direction: column;

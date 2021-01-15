@@ -4,6 +4,115 @@ import { Image } from '@/store/imagesStore'
 
 export const imagesChurch: Image[] = [
   {
+    src: '/church/00001',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.CHURCH,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.UGKC
+    ],
+    title: figcaptionGenerator(
+      'Cвященник (1930)',
+      'о. Теодор Гораєцький (УГКЦ)',
+      `Сімейний фотоальбом ${linkSourceGenerator('Артура Курцвеля', 'https://en.wikipedia.org/wiki/Arthur_Kurzweil')}</a>`),
+    w: 822,
+    h: 1210,
+    year: 1930
+  },
+  {
+    src: '/church/00002',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.CHURCH,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.UGKC
+    ],
+    title: figcaptionGenerator(
+      'Cвященник з дітьми (1944)',
+      'Другий ряд - Мокрицька, Коронович, Стецишин, о. Гораєцький (УГКЦ), Хадай. Локація - пожежна частина',
+      'Сімейний фотоальбом сім\'ї Назарик (с. Мігово)'),
+    year: 1944
+  },
+  {
+    src: '/church/00003',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.PRIEST
+    ],
+    title: figcaptionGenerator(
+      'Княжпіль (~1938р.)',
+      `о. Петро Дутко (УГКЦ), ${linkSourceGenerator('Дмитро Хадай', 'https://uk.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B4%D0%B0%D0%B9_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE_%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87')}`),
+    year: 1938
+  },
+  {
+    src: '/church/00005',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.CHURCH,
+      IMAGES_KEYS_TYPE.UGKC,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.CHILDREN
+    ],
+    title: figcaptionGenerator(
+      'Урочисте причастя (1932р.)',
+      'о. Іван Господаревський, єп. Йосафат Коциловський, о. Теодор Гораєцький, о. Йосип Маринович (УГКЦ)'),
+    year: 1932
+  },
+  {
+    src: '/church/00006',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.CHURCH,
+      IMAGES_KEYS_TYPE.UGKC,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator(
+      'Церква, с. Мігово (1932р.)',
+      'Єпископська візитація в с. Мігово. о. Микола Грицеляк, о. Іван Господаревський, єп. Йосафат Коциловський, о. Йосип Маринович, о. Петро Дутко, о. Станислав Дашо (УГКЦ)'),
+    year: 1937
+  },
+  {
+    src: '/church/00008',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.CHURCH,
+      IMAGES_KEYS_TYPE.UGKC,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: figcaptionGenerator(
+      'Празник (середина 1930-х)',
+      'Празник Зіслання Святого Духа'),
+    year: 1935
+  },
+  {
+    src: '/church/00009',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.UGKC
+    ],
+    title: figcaptionGenerator(
+      'Похорон (1948р.)',
+      'Похорон о. Івана Господаревського (УГКЦ)'),
+    year: 1948
+  },
+  {
+    src: '/church/00010',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.UGKC,
+      IMAGES_KEYS_TYPE.CHILDREN
+    ],
+    title: figcaptionGenerator(
+      'Причастя (1935р.)',
+      'Причастя. Добромиль і Ляцко. о. Іван Господаревський, о. Теодор Гораєцький (УГКЦ)'),
+    year: 1935
+  },
+  {
     src: '/church/00020',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
