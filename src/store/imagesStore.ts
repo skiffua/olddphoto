@@ -9,6 +9,7 @@ export interface Image {
   src: string;
   keys: (IMAGES_KEYS_TYPE | YEARS_KEYS_TYPE)[];
   title: string;
+  description?: string;
   source?: string;
   year: number;
   w?: number;

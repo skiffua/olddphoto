@@ -2,6 +2,7 @@
   <div>
     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
       <figure
+        class="figure"
         v-show="index === 0 || !singleThumbnail"
         itemprop="associatedMedia"
         itemscope
@@ -15,7 +16,9 @@
           :data-title="item.title">
           <img :src="item.thumbnail" :alt="item.alt" itemprop="thumbnail"/>
         </a>
-        <figcaption v-html="item.title"></figcaption>
+        <figcaption-component
+          :item="item"
+        ></figcaption-component>
       </figure>
     </div>
 
@@ -64,12 +67,16 @@
 </template>
 
 <script>
+import FigcaptionComponent from './Figcaption.vue'
 import PhotoSwipe from '../../node_modules/photoswipe/dist/photoswipe'
 import PhotoSwipeUI_Default from '../../node_modules/photoswipe/dist/photoswipe-ui-default'
 import '../../node_modules/photoswipe/dist/photoswipe.css'
 import '../../node_modules/photoswipe/dist/default-skin/default-skin.css'
 
 export default {
+  components: {
+    'figcaption-component': FigcaptionComponent
+  },
   props: {
     items: {
       default: [
@@ -134,7 +141,8 @@ export default {
           item = {
             src: linkEl.getAttribute('href'),
             w: parseInt(size[0], 10),
-            h: parseInt(size[1], 10),
+            //  TODO need to check h: 0
+            h: 0,
             title: linkEl.getAttribute('data-title')
           }
 
@@ -343,7 +351,7 @@ export default {
   .pswp__caption__center {
     max-width: 700px;
     text-align: center;
-    div {
+    div:first-of-type {
       padding: 0 5px;
       border-right: 1px solid white;
       border-left: 1px solid white;
@@ -359,10 +367,20 @@ export default {
   .pswp__button--rotate--right {
     background-position: -26px 10px;
   }
-  figure {
+  .figure {
     /*display: inline;*/
+    width: 300px;
     max-width: 300px;
     border-bottom: 1px solid white;
     margin: 5px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*position: relative;*/
+    .figcaption {
+      /*height: 120px;*/
+      /*display: flex;*/
+      /*flex-direction: column;*/
+    }
   }
 </style>

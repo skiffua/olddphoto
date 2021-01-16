@@ -1,48 +1,17 @@
 import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/store/constants'
-import { figcaptionGenerator, linkSourceGenerator } from '@/components/helpers'
+import { linkSourceGenerator } from '@/components/helpers'
 import { Image } from '@/store/imagesStore'
 
 export const imagesGeneral: Image[] = [
-  {
-    src: '/general/00001',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC
-    ],
-    title: figcaptionGenerator(
-      'Cвященник (1930)',
-      'о. Теодор Гораєцький (УГКЦ)',
-      `Сімейний фотоальбом ${linkSourceGenerator('Артура Курцвеля', 'https://en.wikipedia.org/wiki/Arthur_Kurzweil')}</a>`),
-    w: 822,
-    h: 1210,
-    year: 1930
-  },
-  {
-    src: '/general/00002',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC
-    ],
-    title: figcaptionGenerator(
-      'Cвященник з дітьми (1944)',
-      'Другий ряд - Мокрицька, Коронович, Стецишин, о. Гораєцький (УГКЦ), Хадай. Локація - пожежна частина',
-      'Сімейний фотоальбом сім\'ї Назарик (с. Мігово)'),
-    year: 1944
-  },
   {
     src: '/general/00003',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: figcaptionGenerator(
-      'Замок',
-      'Замок неподалік Добромиля',
-      'Архів польський'),
+    title: 'Замок',
+    description: 'Замок неподалік Добромиля',
+    source: 'Архів польський',
     year: 1930
   },
   {
@@ -53,39 +22,10 @@ export const imagesGeneral: Image[] = [
       IMAGES_KEYS_TYPE.BUILDING,
       IMAGES_KEYS_TYPE.VASILIAN
     ],
-    title: figcaptionGenerator(
-      'Монастир',
-      'Вхідна брама у монастир',
-      'Архів польський'),
+    title: 'Монастир',
+    description: 'Вхідна брама у монастир',
+    source: 'Архів польський',
     year: 1930
-  },
-  {
-    src: '/general/00005',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.UGKC,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.CHILDREN
-    ],
-    title: figcaptionGenerator(
-      'Урочисте причастя (1932р.)',
-      'о. Іван Господаревський, єп. Йосафат Коциловський, о. Теодор Гораєцький, о. Йосип Маринович (УГКЦ)'),
-    year: 1932
-  },
-  {
-    src: '/general/00006',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.UGKC,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.PEOPLE
-    ],
-    title: figcaptionGenerator(
-      'Церква, с. Мігово (1932р.)',
-      'Єпископська візитація в с. Мігово. о. Микола Грицеляк, о. Іван Господаревський, єп. Йосафат Коциловський, о. Йосип Маринович, о. Петро Дутко, о. Станислав Дашо (УГКЦ)'),
-    year: 1937
   },
   {
     src: '/general/00007',
@@ -93,49 +33,9 @@ export const imagesGeneral: Image[] = [
       YEARS_KEYS_TYPE.Y1945_1989,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Демонстрація (рік невідомий)',
-      'Радянська демонстрація'),
+    title: 'Демонстрація (рік невідомий)',
+    description: 'Радянська демонстрація',
     year: 1965
-  },
-  {
-    src: '/general/00008',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.UGKC,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.PEOPLE
-    ],
-    title: figcaptionGenerator(
-      'Празник (середина 1930-х)',
-      'Празник Зіслання Святого Духа'),
-    year: 1935
-  },
-  {
-    src: '/general/00009',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC
-    ],
-    title: figcaptionGenerator(
-      'Похорон (1948р.)',
-      'Похорон о. Івана Господаревського (УГКЦ)'),
-    year: 1948
-  },
-  {
-    src: '/general/00010',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC,
-      IMAGES_KEYS_TYPE.CHILDREN
-    ],
-    title: figcaptionGenerator(
-      'Причастя (1935р.)',
-      'Причастя. Добромиль і Ляцко. о. Іван Господаревський, о. Теодор Гораєцький (УГКЦ)'),
-    year: 1935
   },
   {
     src: '/general/00011',
@@ -144,9 +44,8 @@ export const imagesGeneral: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Вивішування українського прапора на ратушу (1989р.)',
-      'Вивішування державного прапора України на ратушу. Ярослав Угрин'),
+    title: 'Вивішування українського прапора на ратушу (1989р.)',
+    description: 'Вивішування державного прапора України на ратушу. Ярослав Угрин',
     year: 1989
   },
   {
@@ -156,22 +55,9 @@ export const imagesGeneral: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Демонстрація (1989р.)',
-      'Українська демонстрація у Добромилі'),
+    title: 'Демонстрація (1989р.)',
+    description: 'Українська демонстрація у Добромилі',
     year: 1989
-  },
-  {
-    src: '/general/00020',
-    keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.PRIEST
-    ],
-    title: figcaptionGenerator(
-      'Княжпіль (~1938р.)',
-      'о. Петро Дутко (УГКЦ), Дмитро Хадай'),
-    year: 1938
   },
   {
     src: '/general/00021',
@@ -181,9 +67,8 @@ export const imagesGeneral: Image[] = [
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Нижанковичі (1990)',
-      'Перезахоронення воїнів УПА 21.10.1990 в с. Нижанковичі'),
+    title: 'Нижанковичі (1990)',
+    description: 'Перезахоронення воїнів УПА 21.10.1990 в с. Нижанковичі',
     year: 1990
   },
   {
@@ -192,9 +77,8 @@ export const imagesGeneral: Image[] = [
       YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
-      'Неідентифіковане фото'),
+    title: 'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
+    description: 'Неідентифіковане фото',
     year: 1920
   },
   {
@@ -203,9 +87,8 @@ export const imagesGeneral: Image[] = [
       YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
-      'Неідентифіковане фото'),
+    title: 'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
+    description: 'Неідентифіковане фото',
     year: 1920
   },
   {
@@ -214,9 +97,8 @@ export const imagesGeneral: Image[] = [
       YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Перемишль (1938-41рр.?)',
-      'Вишкіл служби порятунку?'),
+    title: 'Перемишль (1938-41рр.?)',
+    description: 'Вишкіл служби порятунку?',
     year: 1938
   },
   {
@@ -225,9 +107,8 @@ export const imagesGeneral: Image[] = [
       YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator(
-      'Добромиль? (1933)',
-      'Вечерниці жіночого кружка'),
+    title: 'Добромиль? (1933)',
+    description: 'Вечерниці жіночого кружка',
     year: 1933
   },
   {
@@ -238,9 +119,129 @@ export const imagesGeneral: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.SALINA
     ],
-    title: figcaptionGenerator(
-      'Саліна (1990р.)',
-      'Поминальний похід на Саліну'),
+    title: 'Саліна (1990р.)',
+    description: 'Поминальний похід на Саліну',
     year: 1990
+  },
+  {
+    src: '/general/00040',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1900-х)',
+    description: 'Добромиль. Загальний вигляд міста',
+    year: 1900
+  },
+  {
+    src: '/general/00041',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'Пожежна частина (1918-1938рр.)',
+    description: 'Пожежна частина у Добромилі (Гучко)',
+    source: `${linkSourceGenerator('Moje Kresy. Kolorowe ptaki Dobromila', 'https://nto.pl/moje-kresy-kolorowe-ptaki-dobromila/ga/4603263/zd/6268353')}`,
+    year: 1920
+  },
+  {
+    src: '/general/00042',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'Костел (поч. 1900-х)',
+    description: 'Римо-католицький костел',
+    year: 1900
+  },
+  {
+    src: '/general/00043',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'Костел (поч. 1900-х)',
+    description: 'Римо-католицький костел',
+    year: 1900
+  },
+  {
+    src: '/general/00044',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Залізничний вокзал (поч. 1900-х)',
+    description: 'Залізничний вокзал у Добромилі',
+    year: 1900
+  },
+  {
+    src: '/general/00045',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'В напрямку Добромиля (1938-1941)',
+    description: 'Передові частини німецької армії в напрямку Добромиля',
+    year: 1938
+  },
+  {
+    src: '/general/00046',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1990-х)',
+    description: 'Центральна частина міста',
+    year: 1900
+  },
+  {
+    src: '/general/00047',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1990-х)',
+    description: 'Саліна. Соляний завод',
+    year: 1900
+  },
+  {
+    src: '/general/00048',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'Замок (поч. 1990-х)',
+    description: 'Замок Гербуртів. Добромиль',
+    year: 1900
+  },
+  {
+    src: '/general/00049',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1990-х)',
+    description: 'Центральна частина міста',
+    year: 1900
+  },
+  {
+    src: '/general/00051',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1990-х)',
+    description: 'Міська ратуша',
+    year: 1900
+  },
+  {
+    src: '/general/00052',
+    keys: [
+      YEARS_KEYS_TYPE.Y1905_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1990-х)',
+    description: 'Перехрестя у напрямку с. Нижанкович та с. Мігово',
+    year: 1900
   }
 ]

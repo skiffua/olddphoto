@@ -1,6 +1,5 @@
 export enum IMAGES_KEYS_TYPE {
   PEOPLE = 'PEOPLE',
-  FAMOUS = 'FAMOUS',
   BUILDING = 'BUILDING',
   CHILDREN = 'CHILDREN',
   KULTURE = 'KULTURE',
@@ -34,14 +33,12 @@ export const IMAGES_YEARS = {
 
 export const IMAGES_KEYS = {
   [IMAGES_KEYS_TYPE.PEOPLE]: 'люди',
-  [IMAGES_KEYS_TYPE.FAMOUS]: 'відомий',
   [IMAGES_KEYS_TYPE.BUILDING]: 'будівлі',
   [IMAGES_KEYS_TYPE.CHILDREN]: 'діти',
   [IMAGES_KEYS_TYPE.KULTURE]: 'культура',
   [IMAGES_KEYS_TYPE.SPORT]: 'спорт',
   [IMAGES_KEYS_TYPE.ZAHID]: 'захід',
   [IMAGES_KEYS_TYPE.SALINA]: 'Саліна',
-  [IMAGES_KEYS_TYPE.TEACHER]: 'вчитель',
   [IMAGES_KEYS_TYPE.PRIEST]: 'священник',
   [IMAGES_KEYS_TYPE.MONK]: 'монах',
   [IMAGES_KEYS_TYPE.CHURCH]: 'церква',
