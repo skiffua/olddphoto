@@ -1,5 +1,5 @@
 import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/store/constants'
-import { figcaptionGenerator, linkSourceGenerator } from '@/components/helpers'
+import { linkSourceGenerator } from '@/components/helpers'
 import { Image } from '@/store/imagesStore'
 
 export const imagesSalina: Image[] = [
@@ -10,9 +10,8 @@ export const imagesSalina: Image[] = [
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: figcaptionGenerator(
-      'Саліна',
-      'Вигляд збоку'),
+    title: 'Саліна',
+    description: 'Вигляд збоку',
     year: 1930
   },
   {
@@ -22,9 +21,8 @@ export const imagesSalina: Image[] = [
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: figcaptionGenerator(
-      'Саліна',
-      'Будівлі соляного заводу'),
+    title: 'Саліна',
+    description: 'Будівлі соляного заводу',
     year: 1930
   },
   {
@@ -34,9 +32,8 @@ export const imagesSalina: Image[] = [
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: figcaptionGenerator(
-      'Саліна',
-      'Соляна копальня'),
+    title: 'Саліна',
+    description: 'Соляна копальня',
     year: 1930
   },
   {
@@ -46,9 +43,8 @@ export const imagesSalina: Image[] = [
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: figcaptionGenerator(
-      'Саліна',
-      'Соляна копальня'),
+    title: 'Саліна',
+    description: 'Соляна копальня',
     year: 1930
   },
   {
@@ -58,9 +54,8 @@ export const imagesSalina: Image[] = [
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: figcaptionGenerator(
-      'Саліна',
-      'Адміністративні будівлі'),
+    title: 'Саліна',
+    description: 'Адміністративні будівлі',
     year: 1930
   },
   {
@@ -70,10 +65,9 @@ export const imagesSalina: Image[] = [
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: figcaptionGenerator(
-      'Саліна',
-      'Вхідна у стару штольню',
-      `Малюнок ${linkSourceGenerator('Володимира Шагала', 'https://paschen.livejournal.com/35228.html')}</a>`),
+    title: 'Саліна',
+    description: 'Вхідна у стару штольню',
+    source: `Малюнок ${linkSourceGenerator('Володимира Шагала', 'https://paschen.livejournal.com/35228.html')}</a>`,
     year: 1930
   },
   {
@@ -82,10 +76,9 @@ export const imagesSalina: Image[] = [
       YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.SALINA
     ],
-    title: figcaptionGenerator(
-      'Трагедія Саліни (1941р., липень)',
-      'Витягування жертв НКВД з соляних шахт в Добромилі ',
-      `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`),
+    title: 'Трагедія Саліни (1941р., липень)',
+    description: 'Витягування жертв НКВД з соляних шахт в Добромилі ',
+    source: `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`,
     year: 1941
   },
   {
@@ -94,10 +87,9 @@ export const imagesSalina: Image[] = [
       YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.SALINA
     ],
-    title: figcaptionGenerator(
-      'Трагедія Саліни (1941р., липень)',
-      'Перша процесія йде на Саліну. Добромиль, вул. Галицька. Липень 1941 р.',
-      `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`),
+    title: 'Трагедія Саліни (1941р., липень)',
+    description: 'Перша процесія йде на Саліну. Добромиль, вул. Галицька. Липень 1941 р.',
+    source: `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`,
     year: 1941
   },
   {
@@ -106,10 +98,9 @@ export const imagesSalina: Image[] = [
       YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.SALINA
     ],
-    title: figcaptionGenerator(
-      'Трагедія Саліни (1941р., липень)',
-      'Виступає з почесним словом Січовий Стрілець Григорій Турко. В почесній варті стоїть Ляйдкомісар Добромиля.',
-      `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`),
+    title: 'Трагедія Саліни (1941р., липень)',
+    description: 'Виступає з почесним словом Січовий Стрілець Григорій Турко. В почесній варті стоїть Ляйдкомісар Добромиля.',
+    source: `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`,
     year: 1941
   },
   {
@@ -118,10 +109,9 @@ export const imagesSalina: Image[] = [
       YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.SALINA
     ],
-    title: figcaptionGenerator(
-      'Звільнення від більшовиків (1941р., липень)',
-      'Святкування звільнення від більшовизму в Добромилі.',
-      `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`),
+    title: 'Звільнення від більшовиків (1941р., липень)',
+    description: 'Святкування звільнення від більшовизму в Добромилі.',
+    source: `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`,
     year: 1941
   },
   {
@@ -130,10 +120,9 @@ export const imagesSalina: Image[] = [
       YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.SALINA
     ],
-    title: figcaptionGenerator(
-      'Трагедія Саліни (1941р., липень)',
-      'Промова о. Мариновича на могилі.',
-      `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`),
+    title: 'Трагедія Саліни (1941р., липень)',
+    description: 'Промова о. Мариновича на могилі.',
+    source: `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`,
     year: 1941
   },
   {
@@ -142,10 +131,9 @@ export const imagesSalina: Image[] = [
       YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.SALINA
     ],
-    title: figcaptionGenerator(
-      'Трагедія Саліни (1941р., липень)',
-      'Витягування тіл із шахти',
-      `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`),
+    title: 'Трагедія Саліни (1941р., липень)',
+    description: 'Витягування тіл із шахти',
+    source: `${linkSourceGenerator('Трагедія Саліни', 'https://paschen.livejournal.com/20535.html')}</a>`,
     year: 1941
   }
 ]

@@ -139,9 +139,9 @@ export default class HelloWorld extends Vue {
   }
 
   getfilteredImages (): void {
-    if (this.filteredImages.length) {
+    if (this.filteredKeys.length) {
       this.isFiltered = true
-      this.imagesByFilter = this.getImages(this.filteredImages)
+      this.imagesByFilter = this.getImages(this.filteredKeys)
     } else {
       this.imagesByFilter = this.getImages([])
     }
@@ -157,7 +157,7 @@ export default class HelloWorld extends Vue {
     })
   }
 
-  get filteredImages (): string[] {
+  get filteredKeys (): string[] {
     const keysFilters: string[] = Object.keys(this.keysFilters)
       .filter(keyFilter => this.keysFilters[keyFilter].isActive === true)
       .map(keyFilter => keyFilter)
@@ -177,7 +177,13 @@ export default class HelloWorld extends Vue {
         thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
         w: image.w ? image.w : 1280,
         h: image.w ? image.w : 822,
-        title: image.title
+        title: image.title,
+        description: image.description,
+        keys: image.keys.map(key => {
+          const allKeys = { ...IMAGES_YEARS, ...IMAGES_KEYS }
+          return allKeys[key]
+        }),
+        source: image.source
       })
       )
   }
@@ -193,7 +199,7 @@ export default class HelloWorld extends Vue {
 <style scoped lang="scss">
   .gallery {
     width: 100%;
-    max-width: 1550px;
+    max-width: 1500px;
     margin: auto;
     height: 100%;
     display: flex;
@@ -219,7 +225,7 @@ export default class HelloWorld extends Vue {
     .gallery-control-panel--years {
       margin-bottom: 8px;
       :not(:last-child ) {
-        margin-right: 5px;
+        /*margin-right: 5px;*/
       }
     }
     .gallery-control-panel {

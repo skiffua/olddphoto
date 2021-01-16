@@ -1,5 +1,4 @@
 import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/store/constants'
-import { figcaptionGenerator } from '@/components/helpers'
 import { Image } from '@/store/imagesStore'
 
 const prosvitaSource = ''
@@ -12,7 +11,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.SPORT,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Спортивний гурток (1925р.)', 'Жіноча секція, відбиванка'),
+    title: 'Спортивний гурток (1925р.)',
+    description: 'Жіноча секція, відбиванка',
     source: prosvitaSource,
     year: 1925
   },
@@ -24,9 +24,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST
     ],
-    title: figcaptionGenerator(
-      'Служебниці Пречистої Діви Марії (1905р.)',
-      'Філія товариства опіки над молоддю й захоронка Служебниць Пречистої Діви Марії'),
+    title: 'Служебниці Пречистої Діви Марії (1905р.)',
+    description: 'Філія товариства опіки над молоддю й захоронка Служебниць Пречистої Діви Марії',
     source: prosvitaSource,
     year: 1905
   },
@@ -37,7 +36,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.SPORT,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Спортивний гурток (1925р.)', 'Жіноча секція, відбиванка'),
+    title: 'Спортивний гурток (1925р.)',
+    description: 'Жіноча секція, відбиванка',
     source: prosvitaSource,
     year: 1925
   },
@@ -49,7 +49,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Драматичний гурток (1929р.)', 'Драматичний гурток'),
+    title: 'Драматичний гурток (1929р.)',
+    description: 'Драматичний гурток',
     source: prosvitaSource,
     year: 1925
   },
@@ -61,7 +62,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Драматичний гурток (1929р.)', 'Драматичний гурток'),
+    title: 'Драматичний гурток (1929р.)',
+    description: 'Драматичний гурток',
     source: prosvitaSource,
     year: 1925
   },
@@ -73,7 +75,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Хор (1944р.)', 'Добромильський хор'),
+    title: 'Хор (1944р.)',
+    description: 'Добромильський хор',
     source: prosvitaSource,
     year: 1944
   },
@@ -85,7 +88,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Хор', 'Добромильський хор. Період радянської окупації'),
+    title: 'Хор',
+    description: 'Добромильський хор. Період радянської окупації',
     source: prosvitaSource,
     year: 1970
   },
@@ -97,7 +101,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Вистава (1988р.)', 'Шевченко "Катерина"'),
+    title: 'Вистава (1988р.)',
+    description: 'Шевченко "Катерина"',
     source: prosvitaSource,
     year: 1988
   },
@@ -109,7 +114,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.KULTURE
     ],
-    title: figcaptionGenerator('Хор', 'Період Незалежної України'),
+    title: 'Хор',
+    description: 'Період Незалежної України',
     source: prosvitaSource,
     year: 1999
   },
@@ -121,7 +127,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.KULTURE
     ],
-    title: figcaptionGenerator('Хор (1928)', 'Хоровий гурток у Добромилі'),
+    title: 'Хор (1928)',
+    description: 'Хоровий гурток у Добромилі',
     source: prosvitaSource,
     year: 1928
   },
@@ -132,7 +139,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Просвіта (1938)', 'Добромильська "Просвіта"'),
+    title: 'Просвіта (1938)',
+    description: 'Добромильська "Просвіта"',
     source: prosvitaSource,
     year: 1938
   },
@@ -144,7 +152,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Гурток (1935р.)', 'Драматичний гурток'),
+    title: 'Гурток (1935р.)',
+    description: 'Драматичний гурток',
     source: prosvitaSource,
     year: 1935
   },
@@ -156,7 +165,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Просвіта (~1928р.)', 'Члени Просвіти'),
+    title: 'Просвіта (~1928р.)',
+    description: 'Члени Просвіти',
     source: prosvitaSource,
     year: 1928
   },
@@ -168,7 +178,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.ZAHID
     ],
-    title: figcaptionGenerator('Світанок (1977р.)', 'Народна хорова капела'),
+    title: 'Світанок (1977р.)',
+    description: 'Народна хорова капела',
     source: prosvitaSource,
     year: 1977
   },
@@ -180,7 +191,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Світанок (2008р.)', 'Народна хорова капела'),
+    title: 'Світанок (2008р.)',
+    description: 'Народна хорова капела',
     source: prosvitaSource,
     year: 2008
   },
@@ -192,7 +204,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Вистава (1990р.)', 'Шевченко "Великий льох'),
+    title: 'Вистава (1990р.)',
+    description: 'Шевченко "Великий льох',
     source: prosvitaSource,
     year: 1990
   },
@@ -204,7 +217,8 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Композиція (1989р.)', 'Літературно-музична композиція "Іду з дитинства до Тараса'),
+    title: 'Композиція (1989р.)',
+    description: 'Літературно-музична композиція "Іду з дитинства до Тараса',
     source: prosvitaSource,
     year: 1989
   },
@@ -214,7 +228,8 @@ export const imagesProsvita: Image[] = [
       YEARS_KEYS_TYPE.Y2000_PRESENT,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: figcaptionGenerator('Помаранчева революція (2004р.)', 'Добромильчани під час помаранчевої революції'),
+    title: 'Помаранчева революція (2004р.)',
+    description: 'Добромильчани під час помаранчевої революції',
     source: prosvitaSource,
     year: 2004
   }

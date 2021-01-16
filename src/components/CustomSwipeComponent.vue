@@ -16,7 +16,9 @@
           :data-title="item.title">
           <img :src="item.thumbnail" :alt="item.alt" itemprop="thumbnail"/>
         </a>
-        <figcaption class="figcaption" v-html="item.title"></figcaption>
+        <figcaption-component
+          :item="item"
+        ></figcaption-component>
       </figure>
     </div>
 
@@ -65,12 +67,16 @@
 </template>
 
 <script>
+import FigcaptionComponent from './Figcaption.vue'
 import PhotoSwipe from '../../node_modules/photoswipe/dist/photoswipe'
 import PhotoSwipeUI_Default from '../../node_modules/photoswipe/dist/photoswipe-ui-default'
 import '../../node_modules/photoswipe/dist/photoswipe.css'
 import '../../node_modules/photoswipe/dist/default-skin/default-skin.css'
 
 export default {
+  components: {
+    'figcaption-component': FigcaptionComponent
+  },
   props: {
     items: {
       default: [
@@ -345,7 +351,7 @@ export default {
   .pswp__caption__center {
     max-width: 700px;
     text-align: center;
-    div {
+    div:first-of-type {
       padding: 0 5px;
       border-right: 1px solid white;
       border-left: 1px solid white;
@@ -372,9 +378,9 @@ export default {
     justify-content: space-between;
     /*position: relative;*/
     .figcaption {
-      height: 120px;
-      display: flex;
-      flex-direction: column;
+      /*height: 120px;*/
+      /*display: flex;*/
+      /*flex-direction: column;*/
     }
   }
 </style>
