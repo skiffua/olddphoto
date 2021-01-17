@@ -7,9 +7,7 @@ export const imagesChurch: Image[] = [
     src: '/church/00001',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Cвященник (1930)',
     description: 'о. Теодор Гораєцький (УГКЦ)',
@@ -22,9 +20,7 @@ export const imagesChurch: Image[] = [
     src: '/church/00002',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Cвященник з дітьми (1944)',
     description: 'Другий ряд - Мокрицька, Коронович, Стецишин, о. Гораєцький (УГКЦ), Хадай. Локація - пожежна частина',
@@ -46,8 +42,6 @@ export const imagesChurch: Image[] = [
     src: '/church/00005',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.UGKC,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.CHILDREN
     ],
@@ -59,8 +53,6 @@ export const imagesChurch: Image[] = [
     src: '/church/00006',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.UGKC,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -72,8 +64,6 @@ export const imagesChurch: Image[] = [
     src: '/church/00008',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
-      IMAGES_KEYS_TYPE.UGKC,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -85,8 +75,7 @@ export const imagesChurch: Image[] = [
     src: '/church/00009',
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Похорон (1948р.)',
     description: 'Похорон о. Івана Господаревського (УГКЦ)',
@@ -97,7 +86,6 @@ export const imagesChurch: Image[] = [
     keys: [
       YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.UGKC,
       IMAGES_KEYS_TYPE.CHILDREN
     ],
     title: 'Причастя (1935р.)',
@@ -110,9 +98,7 @@ export const imagesChurch: Image[] = [
       YEARS_KEYS_TYPE.Y1905_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, монастир (1931р.)',
     description: 'о. Пасив Шевага (з Кристинополя), 2-й - ?, 3-й – о. Мелетій Лончина, 4-й – Веніамин Муциковський (ігумен монастиря у Буковій), 5-й - ?, 6-й – о. Януарій Коциловський (з Жовкви), 7-й – о. Корнилій Войтович, 8-й – о. Йосафат Лабай, ігумен, 9-й – о. Йосиф Загвійський',
@@ -126,8 +112,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, монастир (1929/30р.)',
     description: 'Добромильські брати-філософи з о. Степаном Решетилом, секретарем і прокуратором (економом) Галицької Провінції отців Василіян (в центрі). \n' +
@@ -143,8 +128,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, монастир (~1930р.)',
     description: 'Зимою на лижах біля чернечої гори',
@@ -158,8 +142,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, монастир (1929/30р.)',
     description: 'Добромильські брати-філософи на санях взимку 1930/1931 р. біля Чернеяої гори.',
@@ -173,8 +156,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, монастир (1931/32р.)',
     description: 'Сидять зліва-направо: 1-й – о. Йосиф Пеленський, 2-й – о. Полікарп Марцінюк, ігумен Буківського монастиря, 3-й – о. Микола Грицеляк, канцлер владики Йосафата Коциловського, 4-й – о. Веніамин Муциковський, 5-й – о. Діонісій Ткачук, Протоархимандрит Чину (з 17.07.1931), 6-й – єпископ Йосафат Коциловський, ЧСВВ, 7-й – о. Степан Решетило, Настоятель-адміністратор Галицької Провінції Найсвятішого Спасителя (з 6.08.1931, 12.07.1932 - Протоігумен), 8-й - ? ...',
@@ -188,8 +170,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, священники (УГКЦ) (~1930р.)',
     description: `${linkSourceGenerator(
@@ -207,8 +188,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Обряд освячення дзвона  (кін. 1930-х)',
     description: `Обряд освячення дзвона здійснює ${linkSourceGenerator(
@@ -225,7 +205,6 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Добромильський монастир (кінець 1920-30р)',
@@ -241,7 +220,6 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Добромильський монастир (1934р)',
@@ -256,8 +234,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромильський монастир (1931/32р)',
     description: 'Збір урожаю яблук в саду Добромильського монастиря. Справа-наліво 1-й – Дам’ян Богун, 2-й – Методій Болецький (з песиком), 3-й – за ним о. ігумен Йосафат Лабай (з яблуком), 5-й – Орест Карплюк, ще наліво з руками в кишенях Севастіян Шевчук. Осінь 1931-го або 1932-го.',
@@ -271,8 +248,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль (1932/33р)',
     description: 'Єпископ-помічник Перемишльський Григорій Лакота серед василіян в Добромилі. Можливо на якийсь із відпустових празників (Преображення ГНІХ, Воздвиження Чесного Хреста або Св. Онуфрія) Сидять зліва-направо: 1-й – о. Марко Романович, 2-й – Мелетій Лончина, 3-й – єпископ Григорій Лакота, 4-й – о. Йосафат Лабай, ігумен монастиря, 5-й – о. Платон Мартинюк; стоїть у верхньому ряді 5-й зліва – о. Павло Теодорович, магістр новіціяту в Крехові...',
@@ -286,8 +262,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.UGKC
+      IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, околиці (~1990р)',
     description: 'о. Гнатюк (УГКЦ)',

@@ -7,7 +7,7 @@
     </div>
     <div v-if="item.keys.length" class="figcaption figcaption--keys-block">
       <p class="keys-paragraph">
-        <i>({{itemKeys}})</i>
+        <i>(мітки: {{itemKeys}})</i>
       </p>
     </div>
   </figcaption>
@@ -56,7 +56,7 @@ export default class FigcaptionComponent extends Vue {
     }
   }
   &--keys-block {
-    padding: 0 5px;
+    /*padding: 0 5px;*/
     flex-grow: 0;
     text-align: left;
     font-size: 12px;
