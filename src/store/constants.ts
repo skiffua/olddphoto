@@ -41,10 +41,8 @@ export const IMAGES_KEYS = {
   [IMAGES_KEYS_TYPE.SALINA]: 'Саліна',
   [IMAGES_KEYS_TYPE.PRIEST]: 'священник',
   [IMAGES_KEYS_TYPE.MONK]: 'монах',
-  [IMAGES_KEYS_TYPE.CHURCH]: 'церква',
   [IMAGES_KEYS_TYPE.MONASTERY]: 'монастир',
-  [IMAGES_KEYS_TYPE.VASILIAN]: 'Василіяни',
-  [IMAGES_KEYS_TYPE.UGKC]: 'УГКЦ'
+  [IMAGES_KEYS_TYPE.VASILIAN]: 'Василіяни'
 }
 
 export const STATIC_FOLDER_PATH = '/static/photos'

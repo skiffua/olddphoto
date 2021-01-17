@@ -4,12 +4,12 @@
       <button class="gallery-buttons-keys"
               :class="{'gallery-buttons-keys--isActive': isSomeFilterChecked}"
               @click="resetAllFilters"
-      >Усі | All</button>
+      >Усі</button>
       <button
         class="gallery-buttons-keys"
         :disabled="isFiltered"
         @click="getfilteredImages"
-      >Фільтр | Filter</button>
+      >Фільтр</button>
       <div class="gallery-info-block"><i><span>{{imagesByFilter.length}} / {{getImgsCount}}</span> світлин</i></div>
     </div>
     <div class="gallery-control-panel gallery-control-panel--keys">
@@ -145,6 +145,7 @@ export default class HelloWorld extends Vue {
     } else {
       this.imagesByFilter = this.getImages([])
     }
+    this.activeImagesPage = 1
   }
 
   resetAllFilters (): void {
@@ -224,9 +225,6 @@ export default class HelloWorld extends Vue {
     .gallery-control-panel--keys,
     .gallery-control-panel--years {
       margin-bottom: 8px;
-      :not(:last-child ) {
-        /*margin-right: 5px;*/
-      }
     }
     .gallery-control-panel {
       position: relative;
@@ -250,6 +248,13 @@ export default class HelloWorld extends Vue {
       img {
         width: 150px;
       }
+    }
+  }
+  .gallery-control-panel,
+  .gallery-control-panel--keys,
+  .gallery-control-panel--years {
+    :not(:last-child ) {
+      margin-right: 5px;
     }
   }
 </style>
