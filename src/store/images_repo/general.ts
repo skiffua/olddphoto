@@ -6,7 +6,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00003',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Замок',
@@ -17,7 +17,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00004',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.BUILDING,
       IMAGES_KEYS_TYPE.VASILIAN
@@ -74,7 +74,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00022',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
@@ -84,7 +84,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00023',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Добромиль-Нижанковичі-Перемишль (~1920рр.)',
@@ -94,7 +94,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00024',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Перемишль (1938-41рр.?)',
@@ -104,7 +104,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00025',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Добромиль? (1933)',
@@ -126,7 +126,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00040',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Добромиль (поч. 1900-х)',
@@ -136,7 +136,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00041',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Пожежна частина (1918-1938рр.)',
@@ -147,7 +147,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00042',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Костел (поч. 1900-х)',
@@ -157,7 +157,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00043',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Костел (поч. 1900-х)',
@@ -167,7 +167,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00044',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Залізничний вокзал (поч. 1900-х)',
@@ -177,7 +177,7 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00045',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'В напрямку Добромиля (1938-1941)',
@@ -187,60 +187,60 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00046',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Добромиль (поч. 1990-х)',
+    title: 'Добромиль (поч. 1900-х)',
     description: 'Центральна частина міста',
     year: 1900
   },
   {
     src: '/general/00047',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Добромиль (поч. 1990-х)',
+    title: 'Добромиль (поч. 1900-х)',
     description: 'Саліна. Соляний завод',
     year: 1900
   },
   {
     src: '/general/00048',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: 'Замок (поч. 1990-х)',
+    title: 'Замок (поч. 1900-х)',
     description: 'Замок Гербуртів. Добромиль',
     year: 1900
   },
   {
     src: '/general/00049',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Добромиль (поч. 1990-х)',
+    title: 'Добромиль (поч. 1900-х)',
     description: 'Центральна частина міста',
     year: 1900
   },
   {
     src: '/general/00051',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Добромиль (поч. 1990-х)',
+    title: 'Добромиль (поч. 1900-х)',
     description: 'Міська ратуша',
     year: 1900
   },
   {
     src: '/general/00052',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Добромиль (поч. 1990-х)',
+    title: 'Добромиль (поч. 1900-х)',
     description: 'Перехрестя у напрямку с. Нижанкович та с. Мігово',
     year: 1900
   }

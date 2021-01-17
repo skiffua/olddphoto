@@ -7,7 +7,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00001',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SPORT,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -19,8 +19,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00003',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
-      IMAGES_KEYS_TYPE.CHURCH,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST
     ],
@@ -32,7 +31,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00004',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SPORT,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -44,7 +43,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00005',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
@@ -57,7 +56,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00006',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
@@ -70,7 +69,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00008',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
@@ -122,7 +121,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00013',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.KULTURE
@@ -135,7 +134,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00014',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -147,7 +146,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00015',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE
@@ -160,7 +159,7 @@ export const imagesProsvita: Image[] = [
   {
     src: '/prosvita/00016',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.KULTURE,
       IMAGES_KEYS_TYPE.ZAHID,
       IMAGES_KEYS_TYPE.PEOPLE

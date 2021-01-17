@@ -6,7 +6,7 @@ export const imagesSalina: Image[] = [
   {
     src: '/salina/00001',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
@@ -17,7 +17,7 @@ export const imagesSalina: Image[] = [
   {
     src: '/salina/00002',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
@@ -28,7 +28,7 @@ export const imagesSalina: Image[] = [
   {
     src: '/salina/00003',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
@@ -39,7 +39,7 @@ export const imagesSalina: Image[] = [
   {
     src: '/salina/00004',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
@@ -50,7 +50,7 @@ export const imagesSalina: Image[] = [
   {
     src: '/salina/00005',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
@@ -61,7 +61,7 @@ export const imagesSalina: Image[] = [
   {
     src: '/salina/00006',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],

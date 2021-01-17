@@ -6,7 +6,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00001',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Cвященник (1930)',
@@ -19,7 +19,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00002',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Cвященник з дітьми (1944)',
@@ -30,7 +30,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00003',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST
     ],
@@ -41,7 +41,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00005',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.CHILDREN
     ],
@@ -52,7 +52,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00006',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -63,7 +63,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00008',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -74,7 +74,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00009',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Похорон (1948р.)',
@@ -84,7 +84,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00010',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.CHILDREN
     ],
@@ -95,7 +95,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00020',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.VASILIAN
@@ -108,7 +108,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00021',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -124,7 +124,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00022',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -138,7 +138,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00023',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -152,7 +152,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00024',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -166,7 +166,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00025',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -184,7 +184,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00026',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -200,7 +200,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00027',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -215,7 +215,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00028',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -230,7 +230,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00029',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -244,7 +244,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00030',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
@@ -258,7 +258,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00032',
     keys: [
-      YEARS_KEYS_TYPE.Y1905_1939,
+      YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST,
