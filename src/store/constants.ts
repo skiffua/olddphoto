@@ -10,7 +10,8 @@ export enum IMAGES_KEYS_TYPE {
   PRIEST = 'PRIEST',
   MONK = 'MONK',
   MONASTERY = 'MONASTERY',
-  VASILIAN = 'VASILIAN'
+  VASILIAN = 'VASILIAN',
+  SOVIET = 'SOVIET'
 }
 
 export enum YEARS_KEYS_TYPE {
@@ -40,7 +41,8 @@ export const IMAGES_KEYS = {
   [IMAGES_KEYS_TYPE.PRIEST]: 'священник',
   [IMAGES_KEYS_TYPE.MONK]: 'монах',
   [IMAGES_KEYS_TYPE.MONASTERY]: 'монастир',
-  [IMAGES_KEYS_TYPE.VASILIAN]: 'Василіяни'
+  [IMAGES_KEYS_TYPE.VASILIAN]: 'Василіяни',
+  [IMAGES_KEYS_TYPE.SOVIET]: 'совіти'
 }
 
 export const STATIC_FOLDER_PATH = '/static/photos'

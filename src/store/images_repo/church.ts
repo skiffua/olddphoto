@@ -265,7 +265,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, околиці (~1990р)',
-    description: 'о. Гнатюк (УГКЦ)',
+    description: 'о. Гнатюк (УГКЦ) з парафіанами',
     source: `${linkSourceGenerator('Фото з життя о. Северіяна Гнатюка - кінець 80х / початок 90х', 'https://www.dobromyl-monastery.com/photoarchives-hnatyuk-ua')}`,
     year: 1990
   }

@@ -31,7 +31,8 @@ export const imagesGeneral: Image[] = [
     src: '/general/00007',
     keys: [
       YEARS_KEYS_TYPE.Y1945_1989,
-      IMAGES_KEYS_TYPE.PEOPLE
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SOVIET
     ],
     title: 'Демонстрація (рік невідомий)',
     description: 'Радянська демонстрація',
@@ -148,7 +149,7 @@ export const imagesGeneral: Image[] = [
     src: '/general/00042',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.PEOPLE
+      IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Костел (поч. 1900-х)',
     description: 'Римо-католицький костел',
@@ -158,7 +159,7 @@ export const imagesGeneral: Image[] = [
     src: '/general/00043',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.PEOPLE
+      IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Костел (поч. 1900-х)',
     description: 'Римо-католицький костел',
@@ -208,7 +209,7 @@ export const imagesGeneral: Image[] = [
     src: '/general/00048',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.PEOPLE
+      IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Замок (поч. 1900-х)',
     description: 'Замок Гербуртів. Добромиль',
@@ -242,6 +243,67 @@ export const imagesGeneral: Image[] = [
     ],
     title: 'Добромиль (поч. 1900-х)',
     description: 'Перехрестя у напрямку с. Нижанкович та с. Мігово',
+    year: 1900
+  },
+  {
+    src: '/general/00060',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Пивний завод (поч. 1990-х)',
+    description: 'Дорога на пивний завод у Добромилі',
+    year: 1900
+  },
+  {
+    src: '/general/00061',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'Учасники "Сокола" (поч. 1990-х)',
+    description: 'Учасники добромильського "Сокола". Другий справа у верхньому ряду Юзеф Ґебультович.',
+    source: `${linkSourceGenerator('Добромильські володарі. Яворовські', 'http://dobromyl.org/2014/12/dobromylski-volodari-4/')}`,
+    year: 1900
+  },
+  {
+    src: '/general/00062',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Залізний вокзал (1904р.)',
+    description: 'Залізний вокзал у Добромилі',
+    year: 1904
+  },
+  {
+    src: '/general/00063',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Монастир (поч. 1990-х)',
+    description: 'Добромильський монастир',
+    year: 1900
+  },
+  {
+    src: '/general/00064',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1990-х)',
+    description: 'Панорама міста',
+    year: 1900
+  },
+  {
+    src: '/general/00065',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Замок Гербуртів (поч. 1990-х)',
+    description: 'Руїни замку',
     year: 1900
   }
 ]
