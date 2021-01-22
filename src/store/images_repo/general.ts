@@ -221,6 +221,7 @@ export const imagesGeneral: Image[] = [
     src: '/general/00047',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Добромиль (поч. 1900-х)',
@@ -302,6 +303,7 @@ export const imagesGeneral: Image[] = [
     src: '/general/00063',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Монастир (поч. 1990-х)',

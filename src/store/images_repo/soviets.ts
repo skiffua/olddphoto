@@ -8,8 +8,7 @@ export const imagesSoviets: Image[] = [
     keys: [
       YEARS_KEYS_TYPE.Y1945_1989,
       IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.SOVIET
+      IMAGES_KEYS_TYPE.ZAHID
     ],
     title: 'Будинок культури (1970-1980рр.)',
     description: 'Неідентифікована подія',
@@ -69,7 +68,7 @@ export const imagesSoviets: Image[] = [
       YEARS_KEYS_TYPE.Y1945_1989,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.CHILDREN,
-      IMAGES_KEYS_TYPE.SOVIET
+      IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Саліна (поч. 1980-х)',
     description: 'Період роботи санаторію',
@@ -81,8 +80,7 @@ export const imagesSoviets: Image[] = [
     keys: [
       YEARS_KEYS_TYPE.Y1945_1989,
       IMAGES_KEYS_TYPE.SALINA,
-      IMAGES_KEYS_TYPE.BUILDING,
-      IMAGES_KEYS_TYPE.SOVIET
+      IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Саліна (поч. 1980-х)',
     description: 'Період роботи санаторію',

@@ -8,7 +8,6 @@ export enum IMAGES_KEYS_TYPE {
   SALINA = 'SALINA',
   TEACHER = 'TEACHER',
   PRIEST = 'PRIEST',
-  MONK = 'MONK',
   MONASTERY = 'MONASTERY',
   VASILIAN = 'VASILIAN',
   SOVIET = 'SOVIET'
@@ -39,7 +38,6 @@ export const IMAGES_KEYS = {
   [IMAGES_KEYS_TYPE.ZAHID]: 'захід',
   [IMAGES_KEYS_TYPE.SALINA]: 'Саліна',
   [IMAGES_KEYS_TYPE.PRIEST]: 'священник',
-  [IMAGES_KEYS_TYPE.MONK]: 'монах',
   [IMAGES_KEYS_TYPE.MONASTERY]: 'монастир',
   [IMAGES_KEYS_TYPE.VASILIAN]: 'Василіяни',
   [IMAGES_KEYS_TYPE.SOVIET]: 'совіти'

@@ -7,7 +7,8 @@ export const imagesChurch: Image[] = [
     src: '/church/00001',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.PRIEST
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Cвященник (1930)',
     description: 'о. Теодор Гораєцький (УГКЦ)',
@@ -20,7 +21,8 @@ export const imagesChurch: Image[] = [
     src: '/church/00002',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.PRIEST
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.CHILDREN
     ],
     title: 'Cвященник з дітьми (1944)',
     description: 'Другий ряд - Мокрицька, Коронович, Стецишин, о. Гораєцький (УГКЦ), Хадай. Локація - пожежна частина',
@@ -32,6 +34,7 @@ export const imagesChurch: Image[] = [
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.CHILDREN,
       IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Княжпіль (~1938р.)',
@@ -53,6 +56,7 @@ export const imagesChurch: Image[] = [
     src: '/church/00006',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -64,6 +68,7 @@ export const imagesChurch: Image[] = [
     src: '/church/00008',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
@@ -75,7 +80,8 @@ export const imagesChurch: Image[] = [
     src: '/church/00009',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.PRIEST
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Похорон (1948р.)',
     description: 'Похорон о. Івана Господаревського (УГКЦ)',
@@ -141,7 +147,6 @@ export const imagesChurch: Image[] = [
       YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.VASILIAN
     ],
     title: 'Добромиль, монастир (1929/30р.)',
@@ -202,9 +207,6 @@ export const imagesChurch: Image[] = [
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.MONASTERY,
-      IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Добромильський монастир (кінець 1920-30р)',
@@ -259,10 +261,8 @@ export const imagesChurch: Image[] = [
     src: '/church/00032',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.VASILIAN
+      IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Добромиль, околиці (~1990р)',
     description: 'о. Гнатюк (УГКЦ) з парафіанами',
