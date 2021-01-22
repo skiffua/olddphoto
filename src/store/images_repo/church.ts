@@ -12,7 +12,7 @@ export const imagesChurch: Image[] = [
     ],
     title: 'Cвященник (1930)',
     description: 'о. Теодор Гораєцький (УГКЦ)',
-    source: `Сімейний фотоальбом ${linkSourceGenerator('Артура Курцвеля', 'https://en.wikipedia.org/wiki/Arthur_Kurzweil')}</a>`,
+    source: `Сімейний фотоальбом ${linkSourceGenerator('Anna Baranova', 'https://www.facebook.com/abaranowa')}</a>`,
     w: 822,
     h: 1210,
     year: 1930
@@ -20,7 +20,7 @@ export const imagesChurch: Image[] = [
   {
     src: '/church/00002',
     keys: [
-      YEARS_KEYS_TYPE.Y1900_1939,
+      YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.CHILDREN
     ],

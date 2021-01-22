@@ -16,7 +16,7 @@ export const imagesWWII: Image[] = [
     title: 'Добромиль (1941-43рр.)',
     description: 'Добромиль у період Другої світової війни',
     source: `${linkSourceGenerator(`${photographerSourceText}`, `${photographerSourceUrl}`)}`,
-    year: 1980
+    year: 1941
   },
   {
     src: '/wwii/00003',
@@ -28,7 +28,7 @@ export const imagesWWII: Image[] = [
     title: 'Добромиль (1941-43рр.)',
     description: 'Добромиль у період Другої світової війни',
     source: `${linkSourceGenerator(`${photographerSourceText}`, `${photographerSourceUrl}`)}`,
-    year: 1980
+    year: 1941
   },
   {
     src: '/wwii/00005',
@@ -40,7 +40,7 @@ export const imagesWWII: Image[] = [
     title: 'Добромиль (1941-43рр.)',
     description: 'Добромиль у період Другої світової війни',
     source: `${linkSourceGenerator(`${photographerSourceText}`, `${photographerSourceUrl}`)}`,
-    year: 1980
+    year: 1941
   },
   {
     src: '/wwii/00006',
@@ -52,6 +52,6 @@ export const imagesWWII: Image[] = [
     title: 'Добромиль (1941-43рр.)',
     description: 'Добромиль у період Другої світової війни',
     source: `${linkSourceGenerator(`${photographerSourceText}`, `${photographerSourceUrl}`)}`,
-    year: 1980
+    year: 1941
   }
 ]
