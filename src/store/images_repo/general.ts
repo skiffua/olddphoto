@@ -4,6 +4,28 @@ import { Image } from '@/store/imagesStore'
 
 export const imagesGeneral: Image[] = [
   {
+    src: '/general/00001',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1900-х)',
+    description: 'Колишня податкова',
+    h: 311,
+    w: 500,
+    year: 1900
+  },
+  {
+    src: '/general/00002',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1900-х)',
+    description: 'Будинок "Сокола" у Добромилі',
+    year: 1900
+  },
+  {
     src: '/general/00003',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
@@ -178,12 +200,12 @@ export const imagesGeneral: Image[] = [
   {
     src: '/general/00045',
     keys: [
-      YEARS_KEYS_TYPE.Y1900_1939,
+      YEARS_KEYS_TYPE.Y1939_1945,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: 'В напрямку Добромиля (1938-1941)',
+    title: 'В напрямку Добромиля (1941р.)',
     description: 'Передові частини німецької армії в напрямку Добромиля',
-    year: 1938
+    year: 1941
   },
   {
     src: '/general/00046',

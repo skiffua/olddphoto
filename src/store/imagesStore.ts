@@ -5,6 +5,7 @@ import { imagesGeneral } from '@/store/images_repo/general'
 import { imagesSalina } from '@/store/images_repo/salina'
 import { imagesChurch } from '@/store/images_repo/church'
 import { imagesSoviets } from '@/store/images_repo/soviets'
+import { imagesWWII } from '@/store/images_repo/wwii'
 
 export interface Image {
   src: string;
@@ -28,6 +29,7 @@ export const state: PhotosStoreInterface = {
     ...imagesGeneral,
     ...imagesSalina,
     ...imagesChurch,
-    ...imagesSoviets
+    ...imagesSoviets,
+    ...imagesWWII
   ]
 }
