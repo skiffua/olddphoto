@@ -88,7 +88,7 @@ export const imagesProsvita: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Хор',
-    description: 'Добромильський хор. Період радянської окупації',
+    description: 'Добромильський хор.',
     source: prosvitaSource,
     year: 1970
   },

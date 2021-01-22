@@ -2,6 +2,9 @@ import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/store/constants'
 import { linkSourceGenerator } from '@/components/helpers'
 import { Image } from '@/store/imagesStore'
 
+const photographerSourceText = 'Історичний блог'
+const photographerSourceUrl = 'https://axisslovakia.tumblr.com/page/61'
+
 export const imagesSalina: Image[] = [
   {
     src: '/salina/00001',
@@ -74,6 +77,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00001',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.SALINA
     ],
     title: 'Трагедія Саліни (1941р., липень)',
@@ -85,6 +89,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00002',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.SALINA
     ],
     title: 'Трагедія Саліни (1941р., липень)',
@@ -96,6 +101,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00003',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.SALINA
     ],
     title: 'Трагедія Саліни (1941р., липень)',
@@ -104,10 +110,34 @@ export const imagesSalina: Image[] = [
     year: 1941
   },
   {
+    src: '/salina/tragedy/00004',
+    keys: [
+      YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SALINA
+    ],
+    title: 'Трагедія Саліни (1941р., липень)',
+    description: 'Витягування тіл із шахти',
+    source: `${linkSourceGenerator(`${photographerSourceText}`, `${photographerSourceUrl}`)}`,
+    year: 1941
+  },
+  {
+    src: '/salina/tragedy/00005',
+    keys: [
+      YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SALINA
+    ],
+    title: 'Трагедія Саліни (1941р., липень)',
+    description: 'Витягування тіл із шахти',
+    source: `${linkSourceGenerator(`${photographerSourceText}`, `${photographerSourceUrl}`)}`,
+    year: 1941
+  },
+  {
     src: '/salina/tragedy/00007',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
-      IMAGES_KEYS_TYPE.SALINA
+      IMAGES_KEYS_TYPE.PEOPLE
     ],
     title: 'Звільнення від більшовиків (1941р., липень)',
     description: 'Святкування звільнення від більшовизму в Добромилі.',
@@ -118,6 +148,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00009',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.SALINA
     ],
     title: 'Трагедія Саліни (1941р., липень)',
@@ -129,6 +160,7 @@ export const imagesSalina: Image[] = [
     src: '/salina/tragedy/00012',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.SALINA
     ],
     title: 'Трагедія Саліни (1941р., липень)',

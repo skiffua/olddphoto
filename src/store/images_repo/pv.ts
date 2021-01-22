@@ -49,8 +49,7 @@ export const imagesPv: Image[] = [
       YEARS_KEYS_TYPE.Y1989_2000,
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.VASILIAN,
-      IMAGES_KEYS_TYPE.PRIEST,
-      IMAGES_KEYS_TYPE.MONK
+      IMAGES_KEYS_TYPE.PRIEST
     ],
     title: 'Мотастир ЧСВВ (1990р.)',
     description: 'Ченці',
