@@ -50,6 +50,30 @@ export const imagesGeneral: Image[] = [
     year: 1930
   },
   {
+    src: '/general/00005',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Будинок старости (1910р.)',
+    description: 'Будинок старости у Добромилі',
+    source: `${linkSourceGenerator('POLSKA-ORG.PL',
+      'https://polska-org.pl/8237242,foto.html')}`,
+    year: 1910
+  },
+  {
+    src: '/general/00006',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (1927-1931рр.)',
+    description: 'Панорама міста',
+    source: `${linkSourceGenerator('POLSKA-ORG.PL',
+      'https://gdansk.fotopolska.eu/Dobromil/b320323,Panoramy_Dobromila.html?f=1352127-foto')}`,
+    year: 1930
+  },
+  {
     src: '/general/00007',
     keys: [
       YEARS_KEYS_TYPE.Y1945_1989,
@@ -59,6 +83,43 @@ export const imagesGeneral: Image[] = [
     title: 'Демонстрація (рік невідомий)',
     description: 'Радянська демонстрація',
     year: 1965
+  },
+  {
+    src: '/general/00008',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (1915-1935рр.)',
+    description: 'Можливо, готель. Локація не ідентифікована',
+    source: `${linkSourceGenerator('POLSKA-ORG.PL',
+  'https://polska-org.pl/9009029,foto.html?idEntity=5893274')}`,
+    year: 1920
+  },
+  {
+    src: '/general/00009',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (1913р.)',
+    description: 'Ратуша, пам\'ятник А. Міцкевичу',
+    source: `${linkSourceGenerator('Fotopolska.Eu',
+      'https://gdansk.fotopolska.eu/Dobromil_Ratusz')}`,
+    year: 1913
+  },
+  {
+    src: '/general/00010',
+    keys: [
+      YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (1942р.)',
+    description: 'Залізничний вокзал',
+    source: `${linkSourceGenerator('Fotopolska.Eu',
+      'https://gdansk.fotopolska.eu/Dobromil/b388062,Przystanek_osobowy_Dobromil.html')}`,
+    year: 1942
   },
   {
     src: '/general/00011',
@@ -295,8 +356,8 @@ export const imagesGeneral: Image[] = [
       YEARS_KEYS_TYPE.Y1900_1939,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Залізний вокзал (1904р.)',
-    description: 'Залізний вокзал у Добромилі',
+    title: 'Залізничний вокзал (1904р.)',
+    description: 'Залізничний вокзал у Добромилі',
     year: 1904
   },
   {

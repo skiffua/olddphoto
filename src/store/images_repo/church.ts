@@ -24,7 +24,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.CHILDREN
     ],
-    title: 'Cвященник з дітьми (1944)',
+    title: 'Cвященник з дітьми (1944р.)',
     description: 'Другий ряд - Мокрицька, Коронович, Стецишин, о. Гораєцький (УГКЦ), Хадай. Локація - пожежна частина',
     source: 'Сімейний фотоальбом сім\'ї Назарик (с. Мігово)',
     year: 1944
@@ -72,8 +72,10 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: 'Празник (середина 1930-х)',
-    description: 'Празник Зіслання Святого Духа',
+    title: 'Празник у Добромилі (середина 1930-х)',
+    description: `Празник у церкві Зіслання Святого Духа. 
+    На підводі єпископ Перемишльської єпархії УГКЦ ${linkSourceGenerator('Й. Коциловський', 'https://uk.wikipedia.org/wiki/%D0%99%D0%BE%D1%81%D0%B0%D1%84%D0%B0%D1%82_(%D0%9A%D0%BE%D1%86%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9)')},
+    по ліву руку - о. Йосип Маринович`,
     year: 1935
   },
   {
@@ -209,7 +211,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.MONASTERY,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Добромильський монастир (кінець 1920-30р)',
+    title: 'Добромильський монастир (кінець 1920-30р.)',
     description: 'Добромильський монастир св. Онуфрія 1920-30-ті рр. (вид зі сходу).',
     source: `${linkSourceGenerator('Архівні фото з життя монастиря до 1939 року', 'https://www.dobromyl-monastery.com/photoarchives-ua')}`,
     year: 1925
@@ -224,7 +226,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.VASILIAN,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Добромильський монастир (1934р)',
+    title: 'Добромильський монастир (1934р.)',
     description: 'Перед церквою Добромильського монастиря – в центрі – о. Іпатій Майка (1934 р.) – Апостольство Молитви зі своїм провідником ймовірно на празник Серця Христового.',
     source: `${linkSourceGenerator('Архівні фото з життя монастиря до 1939 року', 'https://www.dobromyl-monastery.com/photoarchives-ua')}`,
     year: 1934
@@ -238,7 +240,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.VASILIAN
     ],
-    title: 'Добромильський монастир (1931/32р)',
+    title: 'Добромильський монастир (1931/32р.)',
     description: 'Збір урожаю яблук в саду Добромильського монастиря. Справа-наліво 1-й – Дам’ян Богун, 2-й – Методій Болецький (з песиком), 3-й – за ним о. ігумен Йосафат Лабай (з яблуком), 5-й – Орест Карплюк, ще наліво з руками в кишенях Севастіян Шевчук. Осінь 1931-го або 1932-го.',
     source: `${linkSourceGenerator('Архівні фото з життя монастиря до 1939 року', 'https://www.dobromyl-monastery.com/photoarchives-ua')}`,
     year: 1931
@@ -252,7 +254,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.VASILIAN
     ],
-    title: 'Добромиль (1932/33р)',
+    title: 'Добромиль (1932/33р.)',
     description: 'Єпископ-помічник Перемишльський Григорій Лакота серед василіян в Добромилі. Можливо на якийсь із відпустових празників (Преображення ГНІХ, Воздвиження Чесного Хреста або Св. Онуфрія) Сидять зліва-направо: 1-й – о. Марко Романович, 2-й – Мелетій Лончина, 3-й – єпископ Григорій Лакота, 4-й – о. Йосафат Лабай, ігумен монастиря, 5-й – о. Платон Мартинюк; стоїть у верхньому ряді 5-й зліва – о. Павло Теодорович, магістр новіціяту в Крехові...',
     source: `${linkSourceGenerator('Архівні фото з життя монастиря до 1939 року', 'https://www.dobromyl-monastery.com/photoarchives-ua')}`,
     year: 1932
@@ -264,7 +266,7 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PEOPLE,
       IMAGES_KEYS_TYPE.PRIEST
     ],
-    title: 'Добромиль, околиці (~1990р)',
+    title: 'Добромиль, околиці (~1990р.)',
     description: 'о. Гнатюк (УГКЦ) з парафіанами',
     source: `${linkSourceGenerator('Фото з життя о. Северіяна Гнатюка - кінець 80х / початок 90х', 'https://www.dobromyl-monastery.com/photoarchives-hnatyuk-ua')}`,
     year: 1990
