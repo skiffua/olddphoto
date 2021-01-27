@@ -1,5 +1,5 @@
 <template>
-  <div id="app" data-server-rendered="true">
+  <div id="app">
     <div id="nav">
       <router-link to="/">Галерея</router-link> -
       <router-link to="/about">Проект</router-link>
