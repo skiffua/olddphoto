@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "heroku-prebuild": "npm install --dev && npm run build"
+    "heroku-prebuild": "npm install --dev && npm run build",
+    "sitemap": "vue-cli-service sitemap",
+    "start": "vue-cli-service serve"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "esm": "^3.2.25",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-picture-swipe": "^2.0.2",
@@ -48,6 +50,7 @@
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
     "url-loader": "^4.1.1",
+    "vue-cli-plugin-sitemap": "~2.3.0",
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {
