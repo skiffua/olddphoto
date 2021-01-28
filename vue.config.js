@@ -6,6 +6,8 @@ const productionPlugins = [
     staticDir: path.join(__dirname, 'dist'),
     routes: [],
     renderer: new PrerenderSPAPlugin.PuppeteerRenderer({
+      renderAfterDocumentEvent: 'render-event',
+      headless: false,
       // We need to inject a value so we're able to
       // detect if the page is currently pre-rendered.
       inject: {},
