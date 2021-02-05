@@ -106,19 +106,6 @@ export const imagesProsvita: Image[] = [
     year: 1988
   },
   {
-    src: '/prosvita/00012',
-    keys: [
-      YEARS_KEYS_TYPE.Y1989_2000,
-      IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.PEOPLE,
-      IMAGES_KEYS_TYPE.KULTURE
-    ],
-    title: 'Хор',
-    description: 'Період Незалежної України',
-    source: prosvitaSource,
-    year: 1999
-  },
-  {
     src: '/prosvita/00013',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
@@ -183,19 +170,6 @@ export const imagesProsvita: Image[] = [
     year: 1977
   },
   {
-    src: '/prosvita/00018',
-    keys: [
-      YEARS_KEYS_TYPE.Y2000_PRESENT,
-      IMAGES_KEYS_TYPE.KULTURE,
-      IMAGES_KEYS_TYPE.ZAHID,
-      IMAGES_KEYS_TYPE.PEOPLE
-    ],
-    title: 'Світанок (2008р.)',
-    description: 'Народна хорова капела',
-    source: prosvitaSource,
-    year: 2008
-  },
-  {
     src: '/prosvita/00019',
     keys: [
       YEARS_KEYS_TYPE.Y1989_2000,
@@ -220,16 +194,5 @@ export const imagesProsvita: Image[] = [
     description: 'Літературно-музична композиція "Іду з дитинства до Тараса',
     source: prosvitaSource,
     year: 1989
-  },
-  {
-    src: '/prosvita/00022',
-    keys: [
-      YEARS_KEYS_TYPE.Y2000_PRESENT,
-      IMAGES_KEYS_TYPE.PEOPLE
-    ],
-    title: 'Помаранчева революція (2004р.)',
-    description: 'Добромильчани під час помаранчевої революції',
-    source: prosvitaSource,
-    year: 2004
   }
 ]
