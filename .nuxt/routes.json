@@ -1,0 +1,23 @@
+[
+  {
+    "name": "About",
+    "path": "/About",
+    "component": "G:\\\\projects\\\\olddphoto\\\\pages\\\\About.vue",
+    "chunkName": "pages/About",
+    "_name": "_f820a2da"
+  },
+  {
+    "name": "home",
+    "path": "/home",
+    "component": "G:\\\\projects\\\\olddphoto\\\\pages\\\\home\\\\index.vue",
+    "chunkName": "pages/home/index",
+    "_name": "_50fde539"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "G:\\\\projects\\\\olddphoto\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2c356978"
+  }
+]
