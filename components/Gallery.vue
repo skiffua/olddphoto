@@ -69,11 +69,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from 'nuxt-property-decorator'
+import { Component, Vue, Watch } from 'nuxt-property-decorator'
 import { getModule } from 'vuex-module-decorators'
 import PhotosModule, { Image } from '~/store/photos'
-import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants';
-// import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/src/store/constants'
+import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
 
 @Component
 export default class Gallery extends Vue {
@@ -85,14 +84,6 @@ export default class Gallery extends Vue {
 
     getImgsCount = this.PhotosInstance.imagesCount
 
-    getAllImgs = this.PhotosInstance.sortedImagesByYear
-    //
-    // @Getter('getImagesByFilter')
-    // getImages!: (filters: string[]) => Image[];
-    //
-    // @Getter('getImagesCount')
-    // getImgsCount!: number;
-    //
     @Watch('imagesByFilter')
     holdOnWhileFiltering (): void {
         this.isFiltered = false
@@ -115,7 +106,6 @@ export default class Gallery extends Vue {
     }
 
     created (): void {
-        console.log('sorted')
         this.imagesByFilter = this.getImages([])
     }
 
