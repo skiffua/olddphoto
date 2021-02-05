@@ -1,0 +1,32 @@
+{
+  "Gallery": {
+    "description": "Auto imported from G:/projects/olddphoto/components/Gallery.vue"
+  },
+  "LazyGallery": {
+    "description": "Auto imported from G:/projects/olddphoto/components/Gallery.vue"
+  },
+  "Helpers": {
+    "description": "Auto imported from G:/projects/olddphoto/components/helpers.ts"
+  },
+  "LazyHelpers": {
+    "description": "Auto imported from G:/projects/olddphoto/components/helpers.ts"
+  },
+  "Navigation": {
+    "description": "Auto imported from G:/projects/olddphoto/components/Navigation.vue"
+  },
+  "LazyNavigation": {
+    "description": "Auto imported from G:/projects/olddphoto/components/Navigation.vue"
+  },
+  "CustomSwipeComponent": {
+    "description": "Auto imported from G:/projects/olddphoto/components/customSwipeComponent/index.vue"
+  },
+  "LazyCustomSwipeComponent": {
+    "description": "Auto imported from G:/projects/olddphoto/components/customSwipeComponent/index.vue"
+  },
+  "Figcaption": {
+    "description": "Auto imported from G:/projects/olddphoto/components/figcaption/index.vue"
+  },
+  "LazyFigcaption": {
+    "description": "Auto imported from G:/projects/olddphoto/components/figcaption/index.vue"
+  }
+}
