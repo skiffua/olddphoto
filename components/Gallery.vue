@@ -202,7 +202,8 @@ export default class Gallery extends Vue {
     width: 100%;
     max-width: 1500px;
     margin: auto;
-    height: 100%;
+    flex-grow: 0;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     .gallery-buttons-keys {

@@ -1,5 +1,6 @@
 <template>
   <div id="app-nuxt">
+    <Navigation />
     <Nuxt />
   </div>
 </template>
@@ -77,6 +78,15 @@ body,html {
 
 * {
   box-sizing: border-box;
+}
+
+#__nuxt, #__layout, #app-nuxt {
+  height: 100%;
+}
+
+#app-nuxt {
+  display: flex;
+  flex-direction: column;
 }
 
 .button--green {

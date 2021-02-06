@@ -15,7 +15,7 @@
       color: dimgrey;
       text-decoration: none;
 
-      &.router-link-exact-active {
+      &.nuxt-link-exact-active {
         color: white;
       }
     }

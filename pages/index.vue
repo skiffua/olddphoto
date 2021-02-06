@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <Navigation />
-    <Gallery />
-  </div>
+  <Gallery />
 </template>
 
 <style lang="scss">

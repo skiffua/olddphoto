@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navigation />
     <div class="about about--page">
       <h1 class="about about--title">Історичні фото Добромильщини</h1>
       <p class="about about--description"><span>Привіт.</span> Вітаю на сайті проекту "Історичні фото Добромильщини", мета якого - зібрати в одному місці історично вагомі та
