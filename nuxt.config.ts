@@ -10,10 +10,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Добромиль, історичні фото. Dobromyl, historical photos' },
       { hid: 'keywords', name: 'keywords', content: 'Добромиль, історичні фото, Dobromyl, historical photos, Dobromil'},
-      { hid: "og:url", property: "og:url", content: "https://dobromyl-old-photo.herokuapp.com/"},
-      { hid: "og:title", property: "og:title", content: "Добромиль, історичні фото"},
-      { hid: "og:description", property: "og:description", content: "Добромиль, історичні фото, Dobromyl, historical photos, Dobromil"},
-      { hid: "og:image", property: "og:image", content: "https://dobromyl-old-photo.herokuapp.com/photos/general/00051.jpg"},
+      { hid: "og:url", property: "og:url", content: 'https://dobromyl-historical-photos.herokuapp.com/'},
+      { hid: "og:title", property: "og:title", content: 'Добромиль, історичні фото'},
+      { hid: "og:description", property: "og:description", content: 'Добромиль, історичні фото, старі фото, Dobromyl, historical photos, old photos, Dobromil'},
+      { hid: "og:image", property: "og:image", content: 'https://dobromyl-historical-photos.herokuapp.com/photos/general/00051.jpg'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -40,7 +40,7 @@ export default {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    hostname: 'http://dobromyl-historical-photos.herokuapp.com/',
+    hostname: 'https://dobromyl-historical-photos.herokuapp.com/',
     exclude: [
       '/about'
     ],
