@@ -144,6 +144,18 @@ export const imagesGeneral: Image[] = [
     year: 1989
   },
   {
+    src: '/general/00013',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.KULTURE,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'c. Солянуватка (1936-38рр.)',
+    description: 'Молодь с. Солянуватка. В першому ряді - Мальгівський Теодор. Просвіта.',
+    source: 'Сімейний фотоальбом родини Босаневич',
+    year: 1937
+  },
+  {
     src: '/general/00021',
     keys: [
       YEARS_KEYS_TYPE.Y1989_2000,

@@ -14,6 +14,19 @@ export const imagesSoviets: Image[] = [
     description: 'Неідентифікована подія',
     year: 1980
   },
+  // {
+  //   src: '/soviets/00002',
+  //   keys: [
+  //     YEARS_KEYS_TYPE.Y1945_1989,
+  //     IMAGES_KEYS_TYPE.PEOPLE,
+  //     IMAGES_KEYS_TYPE.ZAHID,
+  //     IMAGES_KEYS_TYPE.SOVIET
+  //   ],
+  //   title: 'Могила радянським солдатам (1960-1970рр.)',
+  //   description: 'Пам\'ятник солдатам Червоної армії \n' +
+  //     'та членів спецгруп НКВС, загинувшим переважно у боях з українськими повстанцями',
+  //   year: 1970
+  // },
   {
     src: '/soviets/00003',
     keys: [

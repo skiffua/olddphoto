@@ -101,6 +101,28 @@ export const imagesChurch: Image[] = [
     year: 1935
   },
   {
+    src: '/church/00011',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.PRIEST,
+      IMAGES_KEYS_TYPE.CHILDREN
+    ],
+    title: 'Причастя (1938-39р.)',
+    description: 'Причастя, с. Ляцко (теперішня Солянуватка). о. Теодор Гораєцький (УГКЦ) з дітьми. ' +
+      `Майбутні однокласники ${linkSourceGenerator('Богдана Цицика', 'https://uk.wikipedia.org/wiki/%D0%A6%D0%B8%D1%86%D0%B8%D0%BA_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD_%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87')}. ` +
+      'Можливо, сам Богдан також на світлині',
+    year: 1939
+  },
+  {
+    src: '/church/00012',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989
+    ],
+    title: 'г. Радич (1950-60рр.)',
+    description: 'г. Радич. Вигляд з теперішньої вулиці Івана Франка',
+    year: 1960
+  },
+  {
     src: '/church/00020',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
