@@ -46,20 +46,20 @@ export default {
       '/about'
     ],
   },
-  // robots: {
-  //   UserAgent: '*',
-  //   Allow: '/'
-  // },
+  robots: {
+    UserAgent: '*',
+    Allow: '/'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  typescript: {
-    typeCheck: {
-      eslint: {
-        files: './**/*.{ts,js,vue}'
-      },
-      typescript: require.resolve('typescript'),
-    }
-  }
+  // typescript: {
+  //   typeCheck: {
+  //     eslint: {
+  //       files: './**/*.{ts,js,vue}'
+  //     },
+  //     typescript: require.resolve('typescript'),
+  //   }
+  // }
 }

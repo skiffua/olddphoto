@@ -111,7 +111,7 @@ export default class Gallery extends Vue {
 
     filterButtonsKeys: Record<string, string> = IMAGES_KEYS
 
-    filterButtonsYears = IMAGES_YEARS
+    filterButtonsYears: any = IMAGES_YEARS
 
     keysFilters = Object.keys(this.filterButtonsKeys).reduce((filtersObject: any, key: string) => {
         filtersObject[key] = {
@@ -122,7 +122,7 @@ export default class Gallery extends Vue {
     }, {})
 
     // TODO add interface
-    yearsFilters = Object.keys(this.filterButtonsYears).reduce((filtersObject: any, key: string) => {
+    yearsFilters: any = Object.keys(this.filterButtonsYears).reduce((filtersObject: any, key: string) => {
         filtersObject[key] = {
             name: this.filterButtonsYears[key],
             isActive: false
@@ -130,9 +130,8 @@ export default class Gallery extends Vue {
         return filtersObject
     }, {})
 
-    turnOnOffKeyFilter (e, filterType): void {
-        console.log(filterType, this.keysFilters);
-
+    turnOnOffKeyFilter (e: Event, filterType: any): void {
+        // @ts-ignore
         this[filterType][e.target.value].isActive = !this[filterType][e.target.value].isActive
     }
 
@@ -169,7 +168,7 @@ export default class Gallery extends Vue {
         return [...keysFilters, ...yearsFilters]
     }
 
-    get imagesSrc () {
+    get imagesSrc (): any {
         return this.imagesByFilter
             .slice(this.activeImagesPage * this.imagesByPageCount - this.imagesByPageCount,
                 this.activeImagesPage * this.imagesByPageCount)
