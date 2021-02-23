@@ -2,6 +2,9 @@
   "name": "olddphoto",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.15.4"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-vue": "vue-cli-service build",
