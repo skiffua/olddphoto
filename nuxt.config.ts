@@ -37,13 +37,18 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
   sitemap: {
     hostname: 'https://dobromyl-historical-photos.herokuapp.com/',
     exclude: [
       '/about'
     ],
+  },
+  robots: {
+    UserAgent: '*',
+    Allow: '/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
