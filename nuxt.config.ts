@@ -46,10 +46,10 @@ export default {
       '/about'
     ],
   },
-  robots: {
-    UserAgent: '*',
-    Allow: '/'
-  },
+  // robots: {
+  //   UserAgent: '*',
+  //   Allow: '/'
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
