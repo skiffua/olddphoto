@@ -14,7 +14,12 @@
           itemprop="contentUrl"
           :data-size="'' + item.w + 'x' + item.h"
           :data-title="item.title">
-          <img :src="item.thumbnail" :alt="item.alt" itemprop="thumbnail"/>
+          <img
+            @load="imagesLoaded"
+            :src="item.thumbnail"
+            :alt="item.alt"
+            itemprop="thumbnail"
+          />
         </a>
         <Figcaption
           :item="item"
@@ -73,7 +78,16 @@ import 'photoswipe/dist/photoswipe.css'
 import '../../node_modules/photoswipe/dist/default-skin/default-skin.css'
 
 export default {
+  model: {
+    prop: 'isImagesLoaded',
+    event: 'loading',
+  },
+
   props: {
+    isImagesLoaded: {
+      type: Boolean,
+      default: false,
+    },
     items: {
       default: [
         {
@@ -104,7 +118,8 @@ export default {
   data () {
     return {
       pswp: null,
-      angle: 0
+      angle: 0,
+      imagesCount: 0
     }
   },
   mounted () {
@@ -324,6 +339,12 @@ export default {
     initPhotoSwipeFromDOM('.my-gallery')
   },
   methods: {
+    imagesLoaded: function () {
+      this.imagesCount++;
+      if (this.imagesCount === this.items.length) {
+        this.$emit('loading', true);
+      }
+    },
     rotate: function (newAngle) {
       this.angle = this.angle + newAngle
       this.$el.querySelectorAll('.pswp__img').forEach(i => i.style.transform = `rotate(${this.angle}deg)`)

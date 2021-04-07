@@ -41,7 +41,13 @@
       v-if="imagesByFilter.length"
       class="gallery-control-panel gallery-control-panel--swipe-block"
     >
-      <CustomSwipeComponent :items="imagesSrc"></CustomSwipeComponent>
+      <transition name="gallery">
+        <CustomSwipeComponent
+          v-show="imagesLoaded"
+          :items="galleryImages"
+          v-model="imagesLoaded"
+        ></CustomSwipeComponent>
+      </transition>
     </div>
 
     <div
@@ -75,7 +81,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
+import { Component, Watch, Vue, Prop } from 'nuxt-property-decorator'
 import { getModule } from 'vuex-module-decorators'
 import PhotosModule, { Image } from '~/store/photos'
 import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
@@ -101,6 +107,8 @@ export default class Gallery extends Vue {
     isFiltered = false
 
     isCorrectUrl = false
+
+    imagesLoaded = false
 
     get imagesPagesCount (): number {
         if (this.imagesByFilter?.length % this.imagesByPageCount === 0) {
@@ -134,7 +142,7 @@ export default class Gallery extends Vue {
         this.PhotosInstance.resetAllFilters()
     }
 
-    get imagesSrc (): any {
+    get galleryImages (): any {
         return this.imagesByFilter
             .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
                 this.page * this.imagesByPageCount)
@@ -219,5 +227,19 @@ export default class Gallery extends Vue {
     :not(:last-child ) {
       margin-right: 5px;
     }
+  }
+
+  /* Анимации появления и исчезновения могут иметь */
+  /* различные продолжительности и динамику.       */
+  .gallery-enter-active {
+    transition: all .6s ease;
+  }
+  .gallery-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .gallery-enter, .gallery-leave-to
+    /* .slide-fade-leave-active до версии 2.1.8 */ {
+    /*transform: translateX(10px);*/
+    opacity: 0;
   }
 </style>
