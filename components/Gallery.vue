@@ -2,7 +2,7 @@
   <div class="gallery">
     <div class="gallery-control-panel">
       <button class="gallery-buttons-keys"
-              :class="{'gallery-buttons-keys--isActive': isSomeFilterChecked}"
+              :class="{'gallery-buttons-keys--isActive': PhotosInstance.isSomeFilterChecked}"
               @click.prevent="resetAllFilters"
       >Усі</button>
       <button
@@ -10,28 +10,30 @@
         :disabled="isFiltered"
         @click.prevent="getfilteredImages"
       >Фільтр</button>
-      <div class="gallery-info-block"><i><span>{{imagesByFilter.length}} / {{getImgsCount}}</span> світлин</i></div>
+      <div class="gallery-info-block"><i>
+        <span>{{imagesByFilter.length}} / {{PhotosInstance.imagesCount}}</span> світлин</i>
+      </div>
     </div>
     <div class="gallery-control-panel gallery-control-panel--keys">
       <button
-        v-for="(filterButton, index) in Object.keys(keysFilters)" :key="index"
+        v-for="(filterButton, index) in Object.keys(PhotosInstance.wordsFiltersKeys)" :key="index"
         class="gallery-buttons-keys gallery-buttons-keys--keys"
-        :class="{'gallery-buttons-keys--isActive': keysFilters[filterButton].isActive}"
+        :class="{'gallery-buttons-keys--isActive': PhotosInstance.isWordsKeyFiltersChecked(filterButton)}"
         :value="filterButton"
-        @click="(e) => turnOnOffKeyFilter(e, 'keysFilters')"
+        @click="(e) => PhotosInstance.setWordsFilterKey(e.target.value)"
       >
-        {{keysFilters[filterButton].name}}
+        {{PhotosInstance.wordsFiltersKeys[filterButton].name}}
       </button>
     </div>
     <div class="gallery-control-panel gallery-control-panel--years">
       <button
-        v-for="(filterButton, index) in Object.keys(yearsFilters)" :key="index"
+        v-for="(filterButton, index) in Object.keys(PhotosInstance.yearsFiltersKeys)" :key="index"
         class="gallery-buttons-keys gallery-buttons-keys--years"
-        :class="{'gallery-buttons-keys--isActive': yearsFilters[filterButton].isActive}"
+        :class="{'gallery-buttons-keys--isActive': PhotosInstance.isYearsKeyFiltersChecked(filterButton)}"
         :value="filterButton"
-        @click="(e) => turnOnOffKeyFilter(e, 'yearsFilters')"
+        @click="(e) => PhotosInstance.setYearsFilterKey(e.target.value)"
       >
-        {{yearsFilters[filterButton].name}}
+        {{PhotosInstance.yearsFiltersKeys[filterButton].name}}
       </button>
     </div>
 
@@ -58,9 +60,13 @@
         v-for="(paginationButton, index) in imagesPagesCount"
         :key="index"
         class="gallery-buttons-keys gallery-buttons-keys--keys"
-        :class="{'gallery-buttons-keys--isActive': activeImagesPage===index+1}"
+        :class="{
+        'gallery-buttons-keys--isActive': page===index+1,
+        'gallery-buttons-keys--disabled': activePage===index+1,
+        }"
+        :disabled="activePage===index+1"
         :value="index+1"
-        @click="(e) => { activeImagesPage = +e.target.value }"
+        @click="setGalleryPage"
       >
         {{index + 1}}
       </button>
@@ -69,7 +75,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from 'nuxt-property-decorator'
+import { Component, Vue, Watch, Prop } from 'nuxt-property-decorator'
 import { getModule } from 'vuex-module-decorators'
 import PhotosModule, { Image } from '~/store/photos'
 import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
@@ -78,20 +84,18 @@ import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants
 export default class Gallery extends Vue {
     PhotosInstance = getModule(PhotosModule, this.$store);
 
-    getImages (filters: string[]) {
-        return this.PhotosInstance.imagesByFilter(filters)
+    setGalleryPage(e: any): void {
+        this.activePage = e.target!.value
+        this.$router.replace({ path: `/gallery/${e.target!.value}`, params: { page: e.target!.value } })
+        // (e) => { page = +e.target.value }
     }
 
-    getImgsCount = this.PhotosInstance.imagesCount
+    @Prop({ default: 1})
+    page!: number
 
-    @Watch('imagesByFilter')
-    holdOnWhileFiltering (): void {
-        this.isFiltered = false
-    }
+    activePage: number = this.page
 
     imagesByPageCount = 8
-
-    activeImagesPage = 1
 
     imagesByFilter: Image[] = []
 
@@ -106,72 +110,26 @@ export default class Gallery extends Vue {
     }
 
     created (): void {
-        this.imagesByFilter = this.getImages([])
+        this.imagesByFilter = this.PhotosInstance.imagesByFilter
     }
 
-    filterButtonsKeys: Record<string, string> = IMAGES_KEYS
-
-    filterButtonsYears: any = IMAGES_YEARS
-
-    keysFilters = Object.keys(this.filterButtonsKeys).reduce((filtersObject: any, key: string) => {
-        filtersObject[key] = {
-            name: this.filterButtonsKeys[key],
-            isActive: false
+    getfilteredImages (e: any): void {
+        this.isFiltered = true
+        this.imagesByFilter = this.PhotosInstance.imagesByFilter
+        this.isFiltered = false
+        if (this.activePage !== 1) {
+            this.$router.replace({ path: `/gallery/1` })
         }
-        return filtersObject
-    }, {})
-
-    // TODO add interface
-    yearsFilters: any = Object.keys(this.filterButtonsYears).reduce((filtersObject: any, key: string) => {
-        filtersObject[key] = {
-            name: this.filterButtonsYears[key],
-            isActive: false
-        }
-        return filtersObject
-    }, {})
-
-    turnOnOffKeyFilter (e: Event, filterType: any): void {
-        // @ts-ignore
-        this[filterType][e.target.value].isActive = !this[filterType][e.target.value].isActive
-    }
-
-    getfilteredImages (): void {
-        if (this.filteredKeys.length) {
-            this.isFiltered = true
-            this.imagesByFilter = this.getImages(this.filteredKeys)
-        } else {
-            this.imagesByFilter = this.getImages([])
-        }
-        this.activeImagesPage = 1
     }
 
     resetAllFilters (): void {
-        console.log(this.keysFilters);
-
-        Object.keys(this.keysFilters).forEach(key => {
-            this.keysFilters[key].isActive = false
-        })
-
-        Object.keys(this.yearsFilters).forEach(key => {
-            this.yearsFilters[key].isActive = false
-        })
-    }
-
-    get filteredKeys (): string[] {
-        const keysFilters: string[] = Object.keys(this.keysFilters)
-            .filter(keyFilter => this.keysFilters[keyFilter].isActive === true)
-            .map(keyFilter => keyFilter)
-        const yearsFilters: string[] = Object.keys(this.yearsFilters)
-            .filter(keyFilter => this.yearsFilters[keyFilter].isActive === true)
-            .map(keyFilter => keyFilter)
-
-        return [...keysFilters, ...yearsFilters]
+        this.PhotosInstance.resetAllFilters()
     }
 
     get imagesSrc (): any {
         return this.imagesByFilter
-            .slice(this.activeImagesPage * this.imagesByPageCount - this.imagesByPageCount,
-                this.activeImagesPage * this.imagesByPageCount)
+            .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
+                this.page * this.imagesByPageCount)
             .map(image => ({
                     src: STATIC_FOLDER_PATH + image.src + '.jpg',
                     thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
@@ -186,12 +144,6 @@ export default class Gallery extends Vue {
                     source: image.source
                 })
             )
-    }
-
-    get isSomeFilterChecked () {
-        return !Object.keys(this.keysFilters)
-            .some(filter => this.keysFilters[filter].isActive === true) && !Object.keys(this.yearsFilters)
-            .some(filter => this.yearsFilters[filter].isActive === true)
     }
 }
 </script>
@@ -219,6 +171,9 @@ export default class Gallery extends Vue {
       &--isActive {
         box-shadow: 0 0 3px red,
         0 0 5px white;
+      }
+      &--disabled {
+        cursor: default !important;
       }
     }
     .gallery-control-panel,

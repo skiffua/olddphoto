@@ -20,7 +20,7 @@ export enum YEARS_KEYS_TYPE {
   Y2000_PRESENT = 'Y2000_PRESENT',
 }
 
-export const IMAGES_YEARS = {
+export const IMAGES_YEARS: Record<string, string> = {
   [YEARS_KEYS_TYPE.Y1900_1939]: '1900-1939',
   [YEARS_KEYS_TYPE.Y1939_1945]: '1939-1945',
   [YEARS_KEYS_TYPE.Y1945_1989]: '1945-1989',
@@ -28,7 +28,7 @@ export const IMAGES_YEARS = {
   [YEARS_KEYS_TYPE.Y2000_PRESENT]: '2000-*'
 }
 
-export const IMAGES_KEYS = {
+export const IMAGES_KEYS: Record<string, string> = {
   [IMAGES_KEYS_TYPE.PEOPLE]: 'люди',
   [IMAGES_KEYS_TYPE.BUILDING]: 'будівлі',
   [IMAGES_KEYS_TYPE.CHILDREN]: 'діти',
