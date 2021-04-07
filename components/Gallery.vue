@@ -45,7 +45,7 @@
     </div>
 
     <div
-      v-if="!imagesByFilter.length && !isFiltered"
+      v-if="!imagesByFilter.length && !isFiltered && isCorrectUrl"
       class="no-photo-finded"
     >
       <img src="../assets/no-photos.svg">
@@ -75,7 +75,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch, Prop } from 'nuxt-property-decorator'
+import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { getModule } from 'vuex-module-decorators'
 import PhotosModule, { Image } from '~/store/photos'
 import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
@@ -86,8 +86,7 @@ export default class Gallery extends Vue {
 
     setGalleryPage(e: any): void {
         this.activePage = e.target!.value
-        this.$router.replace({ path: `/gallery/${e.target!.value}`, params: { page: e.target!.value } })
-        // (e) => { page = +e.target.value }
+        this.$router.replace({ path: `/gallery/${e.target!.value}` })
     }
 
     @Prop({ default: 1})
@@ -101,6 +100,8 @@ export default class Gallery extends Vue {
 
     isFiltered = false
 
+    isCorrectUrl = false
+
     get imagesPagesCount (): number {
         if (this.imagesByFilter?.length % this.imagesByPageCount === 0) {
             return this.imagesByFilter.length / this.imagesByPageCount
@@ -110,7 +111,14 @@ export default class Gallery extends Vue {
     }
 
     created (): void {
-        this.imagesByFilter = this.PhotosInstance.imagesByFilter
+        const currentPage: string = this.$route.params.page
+
+        if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 15)) {
+            this.$router.replace({ path: '/gallery/1' })
+        } else {
+            this.imagesByFilter = this.PhotosInstance.imagesByFilter
+            this.isCorrectUrl = true
+        }
     }
 
     getfilteredImages (e: any): void {
@@ -118,7 +126,7 @@ export default class Gallery extends Vue {
         this.imagesByFilter = this.PhotosInstance.imagesByFilter
         this.isFiltered = false
         if (this.activePage !== 1) {
-            this.$router.replace({ path: `/gallery/1` })
+            this.$router.replace({ path: '/gallery/1' })
         }
     }
 
