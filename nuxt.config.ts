@@ -42,6 +42,10 @@ export default {
   ],
   sitemap: {
     hostname: 'https://dobromyl-historical-photos.herokuapp.com/',
+    routes: async () => {
+      const galleryPages: number[] = Array.from({length: 15}, (_, i) => i + 1)
+      return galleryPages.map((page: number) => `/gallery/${page}`)
+    },
     exclude: [
       '/about'
     ],
