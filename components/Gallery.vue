@@ -43,7 +43,7 @@
     >
       <transition name="gallery">
         <CustomSwipeComponent
-          v-show="imagesLoaded"
+          @activePswp="emitActivePswp"
           :items="galleryImages"
           v-model="imagesLoaded"
         ></CustomSwipeComponent>
@@ -81,7 +81,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Watch, Vue, Prop } from 'nuxt-property-decorator'
+import { Component, Emit, Vue, Prop } from 'nuxt-property-decorator'
 import { getModule } from 'vuex-module-decorators'
 import PhotosModule, { Image } from '~/store/photos'
 import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
@@ -93,6 +93,11 @@ export default class Gallery extends Vue {
     setGalleryPage(e: any): void {
         this.activePage = e.target!.value
         this.$router.replace({ path: `/gallery/${e.target!.value}` })
+    }
+
+    @Emit('activePswp')
+    emitActivePswp(activeImage: any) {
+        return activeImage
     }
 
     @Prop({ default: 1})

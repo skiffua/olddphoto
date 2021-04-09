@@ -72,12 +72,13 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
 import 'photoswipe/dist/photoswipe.css'
 import '../../node_modules/photoswipe/dist/default-skin/default-skin.css'
 
-export default {
+export default Vue.extend({
   model: {
     prop: 'isImagesLoaded',
     event: 'loading',
@@ -114,6 +115,11 @@ export default {
       type: Boolean,
       default: false
     }
+  },
+  watch: {
+      pswp(activeImage) {
+          this.$emit('activePswp', activeImage)
+      },
   },
   data () {
     return {
@@ -353,8 +359,8 @@ export default {
       this.angle = 0
       this.$el.querySelectorAll('.pswp__img').forEach(i => i.style.transform = `rotate(${this.angle}deg)`)
     }
-  }
-}
+  },
+})
 </script>
 <style lang="scss">
   .my-gallery {
