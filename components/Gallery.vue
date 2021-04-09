@@ -43,7 +43,6 @@
     >
       <transition name="gallery">
         <CustomSwipeComponent
-          v-show="imagesLoaded"
           :items="galleryImages"
           v-model="imagesLoaded"
         ></CustomSwipeComponent>
