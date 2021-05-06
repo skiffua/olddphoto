@@ -72,8 +72,8 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: 'Празник у Добромилі (середина 1930-х)',
-    description: `Празник у церкві Зіслання Святого Духа. 
+    title: 'Добромильщина (середина 1930-х)',
+    description: `Празник Зіслання Святого Духа. 
     На підводі єпископ Перемишльської єпархії УГКЦ ${linkSourceGenerator('Й. Коциловський', 'https://uk.wikipedia.org/wiki/%D0%99%D0%BE%D1%81%D0%B0%D1%84%D0%B0%D1%82_(%D0%9A%D0%BE%D1%86%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9)')},
     по ліву руку - о. Йосип Маринович`,
     year: 1935
