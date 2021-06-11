@@ -7,6 +7,7 @@ import { imagesChurch } from './images_repo/church'
 import { imagesSoviets } from './images_repo/soviets'
 import { imagesWWII } from './images_repo/wwii'
 import { Module, VuexModule, Mutation } from 'vuex-module-decorators'
+import { imagesNl } from '~/store/images_repo/nl'
 
 export interface Image {
   src: string;
@@ -32,7 +33,8 @@ export default class PhotosModule extends VuexModule {
     ...imagesSalina,
     ...imagesChurch,
     ...imagesSoviets,
-    ...imagesWWII
+    ...imagesWWII,
+    ...imagesNl
   ]
 
   wordsKeysFilters: Record<string, any> = Object.keys(IMAGES_KEYS)

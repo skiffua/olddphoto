@@ -1,6 +1,7 @@
 <template>
   <div id="nav">
     <NuxtLink to="/">Галерея</NuxtLink> -
+    <NuxtLink to="/documents">Документи</NuxtLink> -
     <NuxtLink to="/about">Проект</NuxtLink>
   </div>
 </template>
