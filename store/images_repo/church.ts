@@ -10,8 +10,9 @@ export const imagesChurch: Image[] = [
       IMAGES_KEYS_TYPE.PRIEST,
       IMAGES_KEYS_TYPE.BUILDING
     ],
-    title: 'Cвященник (1930)',
-    description: 'о. Теодор Гораєцький (УГКЦ)',
+    title: 'Cвященник (~1930)',
+    description: 'о. Володимир Сурм\'як (1895-1953) (РКЦ). ' +
+      '<br />Włodzimierz Surmiak - Roman Catholic priest, parish priest in Dobromil',
     source: `Сімейний фотоальбом ${linkSourceGenerator('Anna Baranova', 'https://www.facebook.com/abaranowa')}</a>`,
     w: 822,
     h: 1210,
