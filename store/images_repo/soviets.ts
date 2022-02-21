@@ -76,6 +76,17 @@ export const imagesSoviets: Image[] = [
     year: 1980
   },
   {
+    src: '/soviets/00007',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.BUILDING,
+      IMAGES_KEYS_TYPE.SOVIET
+    ],
+    title: 'Вигляд на центр міста',
+    description: 'У плані кінотеатр, пам\'ятник леніну',
+    year: 1975
+  },
+  {
     src: '/soviets/00066',
     keys: [
       YEARS_KEYS_TYPE.Y1945_1989,
