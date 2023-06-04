@@ -1,7 +1,10 @@
 .DS_Store
-/.nuxt
 node_modules
 /dist
+
+# Nuxt dev/build outputs
+.output
+.nuxt
 
 
 # local env files
