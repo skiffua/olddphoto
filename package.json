@@ -11,7 +11,7 @@
     "sitemap": "vue-cli-service sitemap",
     "start-vue": "vue-cli-service serve",
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "npm run generate",
     "generate": "nuxt generate",
     "start": "nuxt start"
   },
