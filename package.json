@@ -2,9 +2,6 @@
   "name": "olddphoto",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "14.15.4"
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-vue": "vue-cli-service build",
@@ -13,10 +10,10 @@
     "heroku-prebuild": "npm install --dev && npm run build",
     "sitemap": "vue-cli-service sitemap",
     "start-vue": "vue-cli-service serve",
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
+    "dev": "nuxt",
+    "build": "nuxt build",
     "generate": "nuxt-ts generate",
-    "start": "nuxt-ts start"
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.1",
