@@ -44,11 +44,11 @@ export default {
     hostname: 'https://dobromyl-historical-photos.netlify.app/',
     gzip: true,
     routes: async () => {
-      const galleryPages: number[] = Array.from({length: 15}, (_, i) => i + 1);
-      return galleryPages.map((page: number) => `/gallery/${page}`);
+      const galleryPages = Array.from({length: 15}, (_, i) => i + 1);
+      return galleryPages.map((page) => `/gallery/${page}`);
     },
     exclude: [
-      '/about'
+      '/About'
     ],
   },
   robots: {

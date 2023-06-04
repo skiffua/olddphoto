@@ -12,7 +12,7 @@
     "start-vue": "vue-cli-service serve",
     "dev": "nuxt",
     "build": "nuxt build",
-    "generate": "nuxt-ts generate",
+    "generate": "nuxt generate",
     "start": "nuxt start"
   },
   "dependencies": {
