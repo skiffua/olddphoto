@@ -43,6 +43,7 @@ export default {
   sitemap: {
     hostname: 'https://dobromyl-historical-photos.netlify.app/',
     gzip: true,
+    path: '/sitemapt.xml',
     routes: async () => {
       const galleryPages = Array.from({length: 15}, (_, i) => i + 1);
       return galleryPages.map((page) => `/gallery/${page}`);
