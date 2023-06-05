@@ -42,8 +42,7 @@ export default {
   ],
   sitemap: {
     hostname: 'https://dobromyl-historical-photos.netlify.app/',
-    gzip: true,
-    path: '/sitemapt.xml',
+    gzip: false,
     routes: async () => {
       const galleryPages = Array.from({length: 15}, (_, i) => i + 1);
       return galleryPages.map((page) => `/gallery/${page}`);
@@ -54,7 +53,8 @@ export default {
   },
   robots: {
     UserAgent: '*',
-    Allow: '/'
+    Allow: '/',
+    Sitemap: 'https://dobromyl-historical-photos.netlify.app/sitemap.xml'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
