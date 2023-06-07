@@ -11,7 +11,7 @@
     </div>
 
     <div class="coffee-section">
-      <div><img alt="support project" src="../assets/icons/coffee.png"></div>
+      <div><img alt="support project" src="../assets/icons/coffee.png" class="coffee-cup"></div>
       <transition
         name="fade"
       >
@@ -77,6 +77,12 @@ export default class About extends Vue {
 
       p {
         padding: 10px 0;
+      }
+
+      .coffee-cup {
+        animation: shake 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
       }
     }
   }
