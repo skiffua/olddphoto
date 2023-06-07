@@ -9,9 +9,8 @@
 </template>
 
 <script lang="ts">
-    import { Component, Watch, Vue, Prop } from 'nuxt-property-decorator'
-    import { getModule } from 'vuex-module-decorators'
-    import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
+    import { Component, Vue } from 'nuxt-property-decorator';
+    import { getModule } from 'vuex-module-decorators';
     import DocumentsModule from "~/store/documents";
 
     @Component

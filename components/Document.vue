@@ -14,13 +14,13 @@
     <button
       v-if="isShowLess"
       @click="toggleDocumentText"
-      class="document--button"
-    >Розгорнути</button>
+      class="button-dark"
+    >розгорнути</button>
     <button
       v-else
       @click="toggleDocumentText"
-      class="document--button"
-    >Згорнути</button>
+      class="button-dark"
+    >згорнути</button>
     <p class="document--author" v-html="document.author"></p>
   </article>
 </template>
@@ -34,9 +34,9 @@ import DocumentsModule from "~/store/documents";
 @Component
 export default class Document extends Vue {
     @Prop({ default: {} })
-    document!: {}
+    document!: {};
 
-    isShowLess = true
+    isShowLess = true;
 
     toggleDocumentText(): void {
        this.isShowLess = !this.isShowLess
@@ -85,12 +85,6 @@ export default class Document extends Vue {
     &--author {
       font-size: 14px;
       text-align: right;
-    }
-    &--button {
-      min-width: 100px;
-      background: black;
-      color: white;
-      border-radius: 10px;
     }
   }
 

@@ -6,6 +6,8 @@
 </template>
 
 <style lang="scss">
+@import '../styles';
+
 html {
   font-family:
     'Source Sans Pro',
