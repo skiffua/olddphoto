@@ -35,7 +35,7 @@ export default class PhotosModule extends VuexModule {
     ...imagesSoviets,
     ...imagesWWII,
     ...imagesNl
-  ]
+  ];
 
   wordsKeysFilters: Record<string, any> = Object.keys(IMAGES_KEYS)
     .reduce((filtersObject: any, key: string) => {

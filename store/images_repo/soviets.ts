@@ -111,4 +111,4 @@ export const imagesSoviets: Image[] = [
     source: `${linkSourceGenerator('Санаторій "Добромиль"', 'http://dobromyl.org/2018/02/sanatorij-dobromyl/')}`,
     year: 1980
   }
-]
+];
