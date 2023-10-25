@@ -8,3 +8,4 @@
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml"
+    Content-Encoding = "UTF-8"
