@@ -7,5 +7,6 @@
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
-    Content-Type = "application/xml"
-    Content-Encoding = "UTF-8"
+  Content-Type = "application/xml"
+  Content-Encoding = "UTF-8"
+  Custom-Header = "10"
