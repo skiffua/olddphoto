@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  headers = {Content-Type = "application/xml", Content-Encoding = "UTF-8", Custom-Header = "10"}
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
