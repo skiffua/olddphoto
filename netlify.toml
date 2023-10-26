@@ -3,16 +3,3 @@
   to = "/sitemap.xml"
   status = 200
   headers = {Content-Type = "application/xml", Content-Encoding = "UTF-8", Custom-Header = "10"}
-
-[[redirects]]
-  from = "/gallery/*"
-  to = "/index.html"
-  status = 200
-
-# Sitemap
-[[headers]]
-  for = "/sitemap.xml"
-  [headers.values]
-  Content-Type = "application/xml"
-  Content-Encoding = "UTF-8"
-  Custom-Header = "10"
