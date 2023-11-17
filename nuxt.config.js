@@ -41,8 +41,8 @@ export default {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://dobromyl-historical-photos.netlify.app/',
+    path: '/sitemapindex.xml',
+    hostname: 'https://dobromyl-historical-photos.netlify.app',
     gzip: false,
     routes: async () => {
       const galleryPages = Array.from({length: 15}, (_, i) => i + 1);
