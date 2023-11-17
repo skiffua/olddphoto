@@ -55,7 +55,7 @@ export default {
   robots: {
     UserAgent: '*',
     Allow: '/',
-    Sitemap: 'https://dobromyl-historical-photos.netlify.app/sitemap.xml'
+    Sitemap: 'https://dobromyl-historical-photos.netlify.app/sitemapindex.xml'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
