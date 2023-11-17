@@ -7,7 +7,7 @@
       <p class="description">У розділі Галлерая (Gallery) публікуються усі наявні в автора світлини.</p>
       <p class="description">Якщо у Вас є цікаві фото і Ви бажаєте ними поділитись, прошу надіслати їх на адресу електронної
         скриньки dobromyl.photo[равлик]gmail.com.</p>
-      <p class="description">Автор ідеї та розробка ресурсу - Олег Мушора.</p>
+      <p class="description">Автор ідеї та розробка ресурсу - Олег Мушора.(TEST)</p>
     </div>
 
     <div class="coffee-section">
