@@ -3,3 +3,8 @@
     for = "/sitemapindex.xml"
     [headers.values]
         Content-Type = "application/xml"
+
+[[headers]]
+    for = "/sitemap-static.xml"
+    [headers.values]
+        Content-Type = "application/xml"
