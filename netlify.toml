@@ -6,5 +6,5 @@
 
 [[redirects]]
     from = "/sitemap.xml"
-    to = "/.static/sitemap-static.xml"
+    to = "/.sitemap-static.xml"
     status = 200
