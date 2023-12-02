@@ -3,6 +3,11 @@
     to = "/index.html"
     status = 200
 
+[[redirects]]
+    from = "/sitemapindex.xml"
+    to = "/sitemapindex.xml"
+    status = 200
+
 # Sitemap
 [[headers]]
     for = "/sitemapindex.xml"
