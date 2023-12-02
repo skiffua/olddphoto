@@ -3,10 +3,10 @@
     for = "/sitemapindex.xml"
     [headers.values]
         X-Jim = "WORKS"
-        Content-Type = "application/xml"
+        Content-Type = "text/xml; charset=utf-8"
 
 [[headers]]
     for = "/sitemap-static.xml"
     [headers.values]
         X-Jim = "WORKS"
-        Content-Type = "application/xml"
+        Content-Type = "text/xml; charset=utf-8"
