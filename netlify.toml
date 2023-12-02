@@ -3,8 +3,3 @@
     for = "/sitemapindex.xml"
     [headers.values]
         Content-Type = "application/xml"
-
-[[redirects]]
-    from = "/sitemapindex.xml"
-    to = "/.sitemap-static.xml"
-    status = 200
