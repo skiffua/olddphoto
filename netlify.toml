@@ -5,6 +5,6 @@
         Content-Type = "application/xml"
 
 [[redirects]]
-    from = "/sitemap.xml"
+    from = "/sitemapindex.xml"
     to = "/.sitemap-static.xml"
     status = 200
