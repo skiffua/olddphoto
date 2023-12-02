@@ -2,9 +2,11 @@
 [[headers]]
     for = "/sitemapindex.xml"
     [headers.values]
+        X-Jim = "WORKS"
         Content-Type = "application/xml"
 
 [[headers]]
     for = "/sitemap-static.xml"
     [headers.values]
+        X-Jim = "WORKS"
         Content-Type = "application/xml"
