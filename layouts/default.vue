@@ -1,7 +1,9 @@
 <template>
   <div id="app-nuxt">
-    <Navigation />
-    <Nuxt />
+    <client-only>
+      <Navigation />
+      <Nuxt />
+    </client-only>
   </div>
 </template>
 
