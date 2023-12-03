@@ -5,6 +5,17 @@
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator';
+
+@Component
+export default class Layout extends Vue {
+  mounted() {
+    console.log('this.$route.', this.$route);
+  }
+}
+</script>
+
 <style lang="scss">
 @import '../styles';
 
