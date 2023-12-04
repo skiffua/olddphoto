@@ -1,11 +1,7 @@
 <template>
   <div id="app-nuxt">
-    <client-only>
-      <template #fallback>
-        <Navigation />
-        <Nuxt />
-      </template>
-    </client-only>
+    <Navigation />
+    <Nuxt />
   </div>
 </template>
 
