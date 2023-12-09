@@ -38,7 +38,7 @@
     </div>
 
     <div
-      v-if="imagesByFilter.length"
+      v-show="imagesByFilter.length"
       class="gallery-control-panel gallery-control-panel--swipe-block"
     >
       <transition name="gallery">
@@ -50,7 +50,7 @@
     </div>
 
     <div
-      v-if="!imagesByFilter.length && !isFiltered && isCorrectUrl"
+      v-show="!imagesByFilter.length && !isFiltered && isCorrectUrl"
       class="no-photo-finded"
     >
       <img src="../assets/no-photos.svg">
@@ -59,7 +59,7 @@
     </div>
 
     <div
-      v-if="imagesByFilter.length"
+      v-show="imagesByFilter.length"
       class="gallery-control-panel gallery-control-panel--pagination">
       <button
         v-for="(paginationButton, index) in imagesPagesCount"
