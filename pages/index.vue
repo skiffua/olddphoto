@@ -1,5 +1,5 @@
 <template>
-  <Gallery />
+  <Album />
 </template>
 
 <style lang="scss">
