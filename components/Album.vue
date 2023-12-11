@@ -86,7 +86,7 @@ import PhotosModule, { Image } from '~/store/photos'
 import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
 
 @Component
-export default class Gallery extends Vue {
+export default class Album extends Vue {
     PhotosInstance = getModule(PhotosModule, this.$store);
 
     setGalleryPage(e: any): void {

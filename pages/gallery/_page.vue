@@ -1,5 +1,5 @@
 <template>
-  <Gallery :page="galleryUrlPage" />
+  <Album :page="galleryUrlPage" />
 </template>
 
 <script lang="ts">
