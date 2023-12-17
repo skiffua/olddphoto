@@ -88,6 +88,7 @@ export default {
       type: Boolean,
       default: false,
     },
+
     items: {
       default: [
         {
@@ -106,15 +107,23 @@ export default {
       ],
       type: Array
     },
+
     options: {
       default: () => ({}),
       type: Object
     },
+
     singleThumbnail: {
       type: Boolean,
       default: false
+    },
+
+    gallerySelector: {
+      type: String,
+      default: '.my-gallery',
     }
   },
+
   data () {
     return {
       pswp: null,
@@ -122,7 +131,8 @@ export default {
       imagesCount: 0
     }
   },
-  created () {
+
+  beforeMount () {
     const that = this
     const initPhotoSwipeFromDOM = function (gallerySelector) {
       // parse slide data (url, title, size ...) from DOM elements
@@ -338,6 +348,10 @@ export default {
 
     initPhotoSwipeFromDOM('.my-gallery')
   },
+
+  mounted() {
+  },
+
   methods: {
     imagesLoaded: function () {
       this.imagesCount++;
