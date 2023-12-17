@@ -87,7 +87,7 @@ import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants
 
 @Component
 export default class Album extends Vue {
-    // PhotosInstance: any;
+  PhotosInstance = getModule(PhotosModule, this.$store)
 
     setGalleryPage(e: any): void {
         this.activePage = e.target!.value
@@ -117,9 +117,9 @@ export default class Album extends Vue {
         }
     }
 
-    get PhotosInstance(): any {
-      return getModule(PhotosModule, this.$store);
-    }
+    // get PhotosInstance(): any {
+    //   return getModule(PhotosModule, this.$store);
+    // }
 
     created (): void {
         const currentPage: string = this.$route.params.page

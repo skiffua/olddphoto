@@ -122,7 +122,7 @@ export default {
       imagesCount: 0
     }
   },
-  mounted () {
+  created () {
     const that = this
     const initPhotoSwipeFromDOM = function (gallerySelector) {
       // parse slide data (url, title, size ...) from DOM elements
