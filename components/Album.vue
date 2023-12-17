@@ -87,7 +87,7 @@ import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants
 
 @Component
 export default class Album extends Vue {
-    PhotosInstance = getModule(PhotosModule, this.$store);
+    // PhotosInstance: any;
 
     setGalleryPage(e: any): void {
         this.activePage = e.target!.value
@@ -117,8 +117,13 @@ export default class Album extends Vue {
         }
     }
 
+    get PhotosInstance(): any {
+      return getModule(PhotosModule, this.$store);
+    }
+
     created (): void {
         const currentPage: string = this.$route.params.page
+      // this.PhotosInstance = getModule(PhotosModule, this.$store)
 
         if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 15)) {
             this.$router.replace({ path: '/gallery/1' })
