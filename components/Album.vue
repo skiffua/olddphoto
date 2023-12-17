@@ -101,8 +101,6 @@ export default class Album extends Vue {
 
     imagesByPageCount = 8
 
-    imagesByFilter: Image[] = []
-
     isFiltered = false
 
     isCorrectUrl = false
@@ -117,26 +115,26 @@ export default class Album extends Vue {
         }
     }
 
+    get imagesByFilter(): Image[] {
+      return this.PhotosInstance ? this.PhotosInstance.imagesByFilter : [];
+    }
+
     // get PhotosInstance(): any {
     //   return getModule(PhotosModule, this.$store);
     // }
 
-    created (): void {
+    beforeCreate (): void {
         const currentPage: string = this.$route.params.page
       // this.PhotosInstance = getModule(PhotosModule, this.$store)
 
         if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 15)) {
             this.$router.replace({ path: '/gallery/1' })
         } else {
-            this.imagesByFilter = this.PhotosInstance.imagesByFilter
             this.isCorrectUrl = true
         }
     }
 
     getfilteredImages (e: any): void {
-        this.isFiltered = true
-        this.imagesByFilter = this.PhotosInstance.imagesByFilter
-        this.isFiltered = false
         if (this.activePage !== 1) {
             this.$router.replace({ path: '/gallery/1' })
         }
