@@ -131,7 +131,7 @@ export default {
     }
   },
 
-  beforeMount () {
+  mounted () {
     const that = this
     const initPhotoSwipeFromDOM = function (gallerySelector) {
       // parse slide data (url, title, size ...) from DOM elements
@@ -346,9 +346,6 @@ export default {
     }
 
     initPhotoSwipeFromDOM('.my-gallery')
-  },
-
-  mounted() {
   },
 
   methods: {
