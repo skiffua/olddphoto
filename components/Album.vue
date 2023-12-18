@@ -147,7 +147,23 @@ export default class Album extends Vue {
     }
 
     get galleryImages (): any {
-      console.log('galleryImages', this.$route.params.page);
+      console.log('galleryImages', this.imagesByFilter
+        .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
+          this.page * this.imagesByPageCount)
+        .map(image => ({
+            src: STATIC_FOLDER_PATH + image.src + '.jpg',
+            thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
+            w: image.w ? image.w : 1280,
+            h: image.w ? image.w : 822,
+            title: image.title,
+            description: image.description,
+            keys: image.keys.map(key => {
+              const allKeys = { ...IMAGES_YEARS, ...IMAGES_KEYS }
+              return allKeys[key]
+            }),
+            source: image.source
+          })
+        ));
 
         return this.imagesByFilter
             .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
