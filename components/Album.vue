@@ -126,7 +126,7 @@ export default class Album extends Vue {
     beforeCreate (): void {
         const currentPage: string = this.$route.params.page
 
-      console.log('this.$route.params.page', this.$route.params.page);
+      // console.log('this.$route.params.page', this.$route.params.page);
       // this.PhotosInstance = getModule(PhotosModule, this.$store)
 
         if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 15)) {
@@ -147,6 +147,8 @@ export default class Album extends Vue {
     }
 
     get galleryImages (): any {
+      console.log('galleryImages', this.$route.params.page);
+
         return this.imagesByFilter
             .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
                 this.page * this.imagesByPageCount)
