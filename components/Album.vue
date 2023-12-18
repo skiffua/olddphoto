@@ -147,7 +147,7 @@ export default class Album extends Vue {
     }
 
     get galleryImages (): any {
-      console.log('galleryImages', this.imagesByFilter
+      console.log('galleryImages', JSON.stringify(this.imagesByFilter
         .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
           this.page * this.imagesByPageCount)
         .map(image => ({
@@ -163,7 +163,7 @@ export default class Album extends Vue {
             }),
             source: image.source
           })
-        ));
+        )));
 
         return this.imagesByFilter
             .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
