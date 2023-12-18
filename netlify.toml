@@ -1,6 +1,6 @@
 [[redirects]]
     from = "/*"
-    to = "/"
+    to = "/*"
     status = 200
 
 # Sitemap
