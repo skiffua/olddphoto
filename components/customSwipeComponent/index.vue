@@ -90,24 +90,20 @@ export default {
     },
 
     items: {
-      default: () => ([
+      default: () => [
         {
           src: 'http://via.placeholder.com/600x400',
           thumbnail: 'http://via.placeholder.com/64x64',
           w: 600,
           h: 400,
           alt: 'some numbers on a grey background',
-          title: ''
-        },
-        {
-          src: 'http://via.placeholder.com/1200x900',
-          thumbnail: 'http://via.placeholder.com/64x64',
           title: '',
-          w: 1200,
-          h: 900
+          source: '',
+          description: '',
+          keys: []
         }
-      ]),
-      type: String
+      ],
+      type: Array
     },
 
     options: {
