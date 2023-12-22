@@ -107,7 +107,7 @@ export default {
           h: 900
         }
       ]),
-      type: Array
+      type: String
     },
 
     options: {
