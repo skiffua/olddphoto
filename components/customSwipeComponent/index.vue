@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+      items {{ items }}
       <figure
         class="figure"
         itemprop="associatedMedia"
