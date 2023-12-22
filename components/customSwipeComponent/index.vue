@@ -90,7 +90,7 @@ export default {
     },
 
     items: {
-      default: [
+      default: () => [
         {
           src: 'http://via.placeholder.com/600x400',
           thumbnail: 'http://via.placeholder.com/64x64',
