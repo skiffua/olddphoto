@@ -1,76 +1,3 @@
-<template>
-  <div>
-    items {{ items }}
-    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-      <figure
-        class="figure"
-        itemprop="associatedMedia"
-        itemscope
-        itemtype="http://schema.org/ImageObject"
-        v-for="(item, index) in items" :src="item.src"
-        v-bind:key="index">
-        <a
-          :href="item.src"
-          itemprop="contentUrl"
-          :data-size="'' + item.w + 'x' + item.h"
-          :data-title="item.title">
-          <img
-            @load="imagesLoaded"
-            :src="item.thumbnail"
-            :alt="item.alt"
-            itemprop="thumbnail"
-          />
-        </a>
-        <Figcaption
-          :item="item"
-        ></Figcaption>
-      </figure>
-    </div>
-
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-        <div class="pswp__ui pswp__ui--hidden">
-
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-            <button class="pswp__button pswp__button--rotate pswp__button--rotate--left" title="Rotate left" v-if="options.rotationOn" @click="rotate(-90)"></button>
-            <button class="pswp__button pswp__button--rotate pswp__button--rotate--right" title="Rotate right" v-if="options.rotationOn" @click="rotate(90)"></button>
-
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip"></div>
-          </div>
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)" @click='resetAngle'>
-          </button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)" @click='resetAngle'>
-          </button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script>
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
@@ -365,6 +292,80 @@ export default {
   }
 }
 </script>
+
+<template>
+  <div>
+    items {{ items }}
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+      <figure
+        class="figure"
+        itemprop="associatedMedia"
+        itemscope
+        itemtype="http://schema.org/ImageObject"
+        v-for="(item, index) in items" :src="item.src"
+        v-bind:key="index">
+        <a
+          :href="item.src"
+          itemprop="contentUrl"
+          :data-size="'' + item.w + 'x' + item.h"
+          :data-title="item.title">
+          <img
+            @load="imagesLoaded"
+            :src="item.thumbnail"
+            :alt="item.alt"
+            itemprop="thumbnail"
+          />
+        </a>
+        <Figcaption
+          :item="item"
+        ></Figcaption>
+      </figure>
+    </div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--rotate pswp__button--rotate--left" title="Rotate left" v-if="options.rotationOn" @click="rotate(-90)"></button>
+            <button class="pswp__button pswp__button--rotate pswp__button--rotate--right" title="Rotate right" v-if="options.rotationOn" @click="rotate(90)"></button>
+
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)" @click='resetAngle'>
+          </button>
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)" @click='resetAngle'>
+          </button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
 <style lang="scss">
   .my-gallery {
     display: flex;
