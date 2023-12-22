@@ -96,11 +96,13 @@ export default {
           thumbnail: 'http://via.placeholder.com/64x64',
           w: 600,
           h: 400,
-          alt: 'some numbers on a grey background'
+          alt: 'some numbers on a grey background',
+          title: ''
         },
         {
           src: 'http://via.placeholder.com/1200x900',
           thumbnail: 'http://via.placeholder.com/64x64',
+          title: '',
           w: 1200,
           h: 900
         }
