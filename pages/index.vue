@@ -1,5 +1,5 @@
 <template>
-  <Album :page="galleryUrlPage"  />
+  <Album />
 </template>
 
 <script lang="ts">
@@ -9,9 +9,5 @@ import PhotosModule, { Image } from '~/store/photos'
 import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
 
 @Component
-export default class GalleryPage extends Vue {
-  get galleryUrlPage(): number {
-    return +this.$route.params.page
-  }
-}
+export default class GalleryPage extends Vue { }
 </script>
