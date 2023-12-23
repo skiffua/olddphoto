@@ -1,5 +1,8 @@
 <template>
-  <Album />
+  <div>
+    galleryUrlPage {{galleryUrlPage}}
+    <Album />
+  </div>
 </template>
 
 <script lang="ts">
