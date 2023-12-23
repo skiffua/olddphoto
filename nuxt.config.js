@@ -66,7 +66,7 @@ export default {
   target: 'static',
   generate: {
     routes: [
-      '/gallery'
+      '/gallery/*'
     ]
   }
   // typescript: {
