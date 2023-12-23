@@ -64,6 +64,11 @@ export default {
   build: {
   },
   target: 'static',
+  generate: {
+    routes: [
+      '/gallery'
+    ]
+  }
   // typescript: {
   //   typeCheck: {
   //     eslint: {
