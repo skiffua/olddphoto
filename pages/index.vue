@@ -14,9 +14,9 @@ import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants
 @Component
 export default class GalleryPage extends Vue {
   get galleryUrlPage(): number {
-    console.log('this.$route.params.page Index', this.$route.params.page);
+    console.log('this.$route.params.page Index', this.$route);
 
-    return +this.$route.params.page
+    return +this.$route
   }
 }
 </script>
