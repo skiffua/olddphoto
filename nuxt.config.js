@@ -65,19 +65,8 @@ export default {
   },
   target: 'static',
   generate: {
-    routes: [
-      '/gallery/1',
-      '/gallery/2',
-      '/gallery/3',
-      '/gallery/4',
-      '/gallery/5',
-      '/gallery/6',
-      '/gallery/7',
-      '/gallery/8',
-      '/gallery/9',
-      '/gallery/10',
-      '/gallery/11'
-    ]
+    routes: () => Array.from({ length: 16 }, (_, index) => index += 1 )
+      .map((page) => `/gallery/${page}/`)
   }
   // typescript: {
   //   typeCheck: {
