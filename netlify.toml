@@ -17,4 +17,4 @@
         Content-Type = "text/xml; charset=utf-8"
 
 [[plugins]]
-    package = "gatsby-plugin-netlify"
+    package = "@gatsby-plugin-netlify"
