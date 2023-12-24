@@ -6,3 +6,12 @@ exports.onCreatePage = ({ page, actions }) => {
     createRedirect({ fromPath: `${page.path}/`, toPath: page.path, isPermanent: true })
   }
 }
+
+exports.createPages = async ({ pages, actions  }) => {
+  const { createPage, createRedirect } = actions
+  // ...
+  pages.forEach(page => {
+    // ...
+    createRedirect({ fromPath: `${page.path}/`, toPath: page.path, isPermanent: true })
+  })
+}
