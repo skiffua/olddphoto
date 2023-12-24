@@ -91,7 +91,7 @@ export default class Album extends Vue {
 
     setGalleryPage(e: any): void {
         this.activePage = e.target!.value
-        this.$router.replace({ path: `/gallery/${e.target!.value}` })
+        this.$router.replace({ path: `/gallery/${e.target!.value}/` })
     }
 
     @Prop({ default: 1})
@@ -130,7 +130,7 @@ export default class Album extends Vue {
       // this.PhotosInstance = getModule(PhotosModule, this.$store)
 
         if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 15)) {
-            this.$router.replace({ path: '/gallery/1' })
+            this.$router.replace({ path: '/gallery/1/' })
         } else {
             this.isCorrectUrl = true
         }
@@ -138,7 +138,7 @@ export default class Album extends Vue {
 
     getfilteredImages (e: any): void {
         if (this.activePage !== 1) {
-            this.$router.replace({ path: '/gallery/1' })
+            this.$router.replace({ path: '/gallery/1/' })
         }
     }
 
@@ -147,24 +147,6 @@ export default class Album extends Vue {
     }
 
     get galleryImages (): any {
-      console.log('galleryImages', JSON.stringify(this.imagesByFilter
-        .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
-          this.page * this.imagesByPageCount)
-        .map(image => ({
-            src: STATIC_FOLDER_PATH + image.src + '.jpg',
-            thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
-            w: image.w ? image.w : 1280,
-            h: image.w ? image.w : 822,
-            title: image.title,
-            description: image.description,
-            keys: image.keys.map(key => {
-              const allKeys = { ...IMAGES_YEARS, ...IMAGES_KEYS }
-              return allKeys[key]
-            }),
-            source: image.source
-          })
-        )));
-
         return this.imagesByFilter
             .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
                 this.page * this.imagesByPageCount)
