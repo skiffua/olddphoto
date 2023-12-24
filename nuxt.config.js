@@ -8,11 +8,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Добромиль, історичні фото. Dobromyl, historical photos' },
-      { hid: 'keywords', name: 'keywords', content: 'Добромиль, історичні фото, Dobromyl, historical photos, Dobromil'},
+      { hid: 'description', name: 'description', content: 'Добромиль історичні фото старі ретро фото Dobromyl historical photos old photos Dobromil' },
+      { hid: 'keywords', name: 'keywords', content: 'Добромиль, історичні фото, Dobromyl, historical, retro, photos, Dobromil'},
       { hid: 'og:url', property: 'og:url', content: 'https://dobromyl-historical-photos.netlify.app/'},
       { hid: 'og:title', property: 'og:title', content: 'Добромиль, історичні фото'},
-      { hid: 'og:description', property: 'og:description', content: 'Добромиль, історичні фото, старі фото, Dobromyl, historical photos, old photos, Dobromil'},
+      { hid: 'og:description', property: 'og:description', content: 'Добромиль історичні фото старі ретро фото Dobromyl historical photos old photos Dobromil'},
       { hid: 'og:image', property: 'og:image', content: 'https://dobromyl-historical-photos.netlify.app/photos/general/00051.jpg'},
     ],
     link: [
