@@ -15,3 +15,6 @@
     [headers.values]
         X-Jim = "WORKS"
         Content-Type = "text/xml; charset=utf-8"
+
+[[plugins]]
+    package = "gatsby-plugin-netlify"
