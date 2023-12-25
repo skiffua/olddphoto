@@ -31,6 +31,16 @@ export const imagesWWII: Image[] = [
     year: 1941
   },
   {
+    src: '/wwii/00003',
+    keys: [
+      YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'Добромиль (~1941р.)',
+    description: 'Добромиль у період Другої світової війни',
+    year: 1941
+  },
+  {
     src: '/wwii/00005',
     keys: [
       YEARS_KEYS_TYPE.Y1939_1945,
@@ -52,6 +62,16 @@ export const imagesWWII: Image[] = [
     title: 'Добромиль (1941-43рр.)',
     description: 'Добромиль у період Другої світової війни',
     source: `${linkSourceGenerator(`${photographerSourceText}`, `${photographerSourceUrl}`)}`,
+    year: 1941
+  },
+  {
+    src: '/wwii/00007',
+    keys: [
+      YEARS_KEYS_TYPE.Y1939_1945,
+      IMAGES_KEYS_TYPE.PEOPLE
+    ],
+    title: 'Добромиль (~1941)',
+    description: 'Добромиль у період Другої світової війни',
     year: 1941
   }
 ]

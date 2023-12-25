@@ -129,7 +129,7 @@ export default class Album extends Vue {
       // console.log('this.$route.params.page', this.$route.params.page);
       // this.PhotosInstance = getModule(PhotosModule, this.$store)
 
-        if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 15)) {
+        if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 17)) {
             this.$router.replace({ path: '/gallery/1/' })
         } else {
             this.isCorrectUrl = true

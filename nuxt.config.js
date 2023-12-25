@@ -11,7 +11,8 @@ export default {
       { hid: 'description', name: 'description', content: 'Добромиль історичні фото старі ретро фото Dobromyl historical photos old photos Dobromil' },
       { hid: 'keywords', name: 'keywords', content: 'Добромиль, історичні фото, Dobromyl, historical, retro, photos, Dobromil'},
       { hid: 'og:url', property: 'og:url', content: 'https://dobromyl-historical-photos.netlify.app/'},
-      { hid: 'og:title', property: 'og:title', content: 'Добромиль, історичні фото'},
+      { hid: 'og:title', property: 'og:title', lang: 'ua', content: 'Добромиль, історичні фото'},
+      { hid: 'og:title', property: 'og:title', lang: 'en', content: 'Dobromyl, retro photos'},
       { hid: 'og:description', property: 'og:description', content: 'Добромиль історичні фото старі ретро фото Dobromyl historical photos old photos Dobromil'},
       { hid: 'og:image', property: 'og:image', content: 'https://dobromyl-historical-photos.netlify.app/photos/general/00051.jpg'},
     ],
@@ -47,7 +48,7 @@ export default {
     hostname: 'https://dobromyl-historical-photos.netlify.app',
     gzip: true,
     routes: async () => {
-      const galleryPages = Array.from({length: 15}, (_, i) => i + 1);
+      const galleryPages = Array.from({ length: 17 }, (_, i) => i + 1);
       return galleryPages.map((page) => `/gallery/${page}`);
     },
     exclude: [

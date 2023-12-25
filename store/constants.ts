@@ -8,6 +8,7 @@ export enum IMAGES_KEYS_TYPE {
   SALINA = 'SALINA',
   PRIEST = 'PRIEST',
   MONASTERY = 'MONASTERY',
+  CASTLE = 'CASTLE',
   VASILIAN = 'VASILIAN',
   SOVIET = 'SOVIET'
 }
@@ -36,6 +37,7 @@ export const IMAGES_KEYS: Record<string, string> = {
   [IMAGES_KEYS_TYPE.SPORT]: 'спорт',
   [IMAGES_KEYS_TYPE.ZAHID]: 'захід',
   [IMAGES_KEYS_TYPE.SALINA]: 'Саліна',
+  [IMAGES_KEYS_TYPE.CASTLE]: 'замок',
   [IMAGES_KEYS_TYPE.PRIEST]: 'священник',
   [IMAGES_KEYS_TYPE.MONASTERY]: 'монастир',
   [IMAGES_KEYS_TYPE.VASILIAN]: 'Василіяни',

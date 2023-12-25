@@ -29,6 +29,7 @@ export const imagesGeneral: Image[] = [
     src: '/general/00003',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.CASTLE,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Замок',
@@ -154,6 +155,36 @@ export const imagesGeneral: Image[] = [
     description: 'Молодь с. Солянуватка. В першому ряді - Мальгівський Теодор. Просвіта.',
     source: 'Сімейний фотоальбом родини Босаневич',
     year: 1937
+  },
+  {
+    src: '/general/00014',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1900-х)',
+    description: 'Міська ратуша',
+    year: 1900
+  },
+  {
+    src: '/general/00015',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (поч. 1990-х)',
+    description: 'Панорама міста',
+    year: 1900
+  },
+  {
+    src: '/general/00016',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (~1980)',
+    description: 'Ресторан "Добромиль"',
+    year: 1980
   },
   {
     src: '/general/00021',

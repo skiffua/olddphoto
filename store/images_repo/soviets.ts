@@ -87,6 +87,29 @@ export const imagesSoviets: Image[] = [
     year: 1975
   },
   {
+    src: '/soviets/00008',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.CHILDREN,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SOVIET
+    ],
+    title: 'Метелики на вулиці',
+    description: 'Добромиль, діти',
+    source: `${linkSourceGenerator('Метелики на вулиці"', 'https://violity.com/ua/114949764-meteliki-na-vulici-dobromil-diti?utm_source=search_result&utm_medium=meteliki-na-vulici-dobromil-diti&utm_campaign=50uah')}`,
+    year: 1960
+  },
+  {
+    src: '/soviets/00009',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.SOVIET
+    ],
+    title: 'Пам\'ятник Леніну',
+    description: 'Добромиль, центр міста',
+    year: 1970
+  },
+  {
     src: '/soviets/00066',
     keys: [
       YEARS_KEYS_TYPE.Y1945_1989,

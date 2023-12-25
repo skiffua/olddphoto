@@ -1,13 +1,14 @@
 import {IMAGES_KEYS, IMAGES_KEYS_TYPE, IMAGES_YEARS, YEARS_KEYS_TYPE} from './constants'
 import { imagesPv } from './images_repo/pv'
-import { imagesProsvita } from './images_repo/prosvita'
-import { imagesGeneral } from './images_repo/general'
-import { imagesSalina } from './images_repo/salina'
-import { imagesChurch } from './images_repo/church'
-import { imagesSoviets } from './images_repo/soviets'
-import { imagesWWII } from './images_repo/wwii'
-import { Module, VuexModule, Mutation } from 'vuex-module-decorators'
-import { imagesNl } from '~/store/images_repo/nl'
+import { imagesProsvita } from './images_repo/prosvita';
+import { imagesGeneral } from './images_repo/general';
+import { imagesSalina } from './images_repo/salina';
+import { imagesCastle } from '~/store/images_repo/castle';
+import { imagesChurch } from './images_repo/church';
+import { imagesSoviets } from './images_repo/soviets';
+import { imagesWWII } from './images_repo/wwii';
+import { Module, VuexModule, Mutation } from 'vuex-module-decorators';
+import { imagesNl } from '~/store/images_repo/nl';
 
 export interface Image {
   src: string;
@@ -26,11 +27,14 @@ export interface Image {
   namespaced: true,
 })
 export default class PhotosModule extends VuexModule {
+  // prev - width: 300 x 200
+  // full - width: 1280 x 822
   images: Image[] = [
     ...imagesProsvita,
     ...imagesPv,
     ...imagesGeneral,
     ...imagesSalina,
+    ...imagesCastle,
     ...imagesChurch,
     ...imagesSoviets,
     ...imagesWWII,
