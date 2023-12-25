@@ -49,7 +49,7 @@ export default {
     gzip: true,
     routes: async () => {
       const galleryPages = Array.from({ length: 17 }, (_, i) => i + 1);
-      return galleryPages.map((page) => `/gallery/${page}`);
+      return galleryPages.map((page) => `/gallery/${page}/`);
     },
     exclude: [
       '/About'
@@ -66,7 +66,7 @@ export default {
   },
   target: 'static',
   generate: {
-    routes: () => Array.from({ length: 16 }, (_, index) => index += 1 )
+    routes: () => Array.from({ length: 17 }, (_, index) => index += 1 )
       .map((page) => `/gallery/${page}/`)
   }
   // typescript: {
