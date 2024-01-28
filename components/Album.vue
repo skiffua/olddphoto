@@ -151,7 +151,7 @@ export default class Album extends Vue {
             .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
                 this.page * this.imagesByPageCount)
             .map(image => ({
-                    src: STATIC_FOLDER_PATH + image.src + '.jpg',
+                    src: 'https://dobromyl-historical-photos.netlify.app' + STATIC_FOLDER_PATH + image.src + '.jpg',
                     thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
                     w: image.w ? image.w : 1280,
                     h: image.w ? image.w : 822,
