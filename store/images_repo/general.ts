@@ -187,6 +187,17 @@ export const imagesGeneral: Image[] = [
     year: 1980
   },
   {
+    src: '/general/00018',
+    keys: [
+      YEARS_KEYS_TYPE.Y1900_1939,
+      IMAGES_KEYS_TYPE.BUILDING
+    ],
+    title: 'Добромиль (~1900)',
+    description: 'Центр міста',
+    source: `${linkSourceGenerator('Arthur Kurzweil', 'https://www.facebook.com/arthur.kurzweil.9')}`,
+    year: 1900
+  },
+  {
     src: '/general/00021',
     keys: [
       YEARS_KEYS_TYPE.Y1989_2000,

@@ -110,6 +110,41 @@ export const imagesSoviets: Image[] = [
     year: 1970
   },
   {
+    src: '/soviets/00010',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SOVIET
+    ],
+    title: 'Радянська демонтрація',
+    description: 'Добромиль, центр міста',
+    source: `${linkSourceGenerator('Ігор Яцинич', 'https://www.facebook.com/Igor.Yatsynych')}`,
+    year: 1958
+  },
+  {
+    src: '/soviets/00011',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SOVIET
+    ],
+    title: 'Агітпоїзд в колгоспі ім. Калініна (с.Княжпіль)',
+    description: 'Княжпіль',
+    source: `${linkSourceGenerator('Ігор Яцинич', 'https://www.facebook.com/Igor.Yatsynych')}`,
+    year: 1967
+  },
+  {
+    src: '/soviets/00012',
+    keys: [
+      YEARS_KEYS_TYPE.Y1945_1989,
+      IMAGES_KEYS_TYPE.PEOPLE,
+      IMAGES_KEYS_TYPE.SOVIET
+    ],
+    title: 'Радянська демонтрація',
+    description: 'Добромиль, 1 травня 1972 року. Колона працівників райміжколгоспбуду.',
+    year: 1967
+  },
+  {
     src: '/soviets/00066',
     keys: [
       YEARS_KEYS_TYPE.Y1945_1989,
