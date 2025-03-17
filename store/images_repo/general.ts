@@ -187,15 +187,18 @@ export const imagesGeneral: Image[] = [
     year: 1980
   },
   {
-    src: '/general/00018',
+    src: '/general/00017',
     keys: [
       YEARS_KEYS_TYPE.Y1900_1939,
-      IMAGES_KEYS_TYPE.BUILDING
+      IMAGES_KEYS_TYPE.PEOPLE
     ],
-    title: 'Добромиль (~1900)',
-    description: 'Центр міста',
-    source: `${linkSourceGenerator('Arthur Kurzweil', 'https://www.facebook.com/arthur.kurzweil.9')}`,
-    year: 1900
+    title: 'Сім\'я Гера',
+    description: 'Степан Гера, Ольга Гера, Ганна Гера, Дмитро Гера. Степан Гера (1896р. н.) - ' +
+      '<a ' +
+      'href="https://www.legionukrainiansichriflemen.com/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%B8/5-%D1%82%D0%B0-%D0%A1%D0%9E%D0%A2%D0%9D%D0%AF"' +
+      'target="_blank">стрілець Першого полку УСС, п\'ята сотня</a>',
+    source: `${linkSourceGenerator('Локальна історія', 'https://www.facebook.com/photo.php?fbid=1480505385462215&id=173162079529892&set=a.173171142862319&locale=ml_IN')}`,
+    year: 1930
   },
   {
     src: '/general/00021',
