@@ -18,7 +18,7 @@
         <div
           v-if="!isShowLess"
         >
-          <p><i>5169 3600 1000 8112</i></p>
+          <p><i></i></p>
         </div>
       </transition>
       <button
