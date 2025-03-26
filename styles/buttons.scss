@@ -4,3 +4,9 @@
   color: white;
   border-radius: 10px;
 }
+
+@media only screen and (max-device-width: 550px) {
+  .floatingchat-container-wrap-mobi {
+    bottom: 65px;
+  }
+}
