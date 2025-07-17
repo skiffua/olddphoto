@@ -3,7 +3,7 @@
     <div class="about-section">
       <h1 class="title">Історичні фото Добромильщини</h1>
       <p class="description"><span>Привіт.</span> Вітаю на сайті проекту "Історичні фото Добромильщини", мета якого - зібрати в одному місці історично вагомі та
-        цікаві фото, спогади, документи нашого міста та місцевості.
+        цікаві фото, спогади, документи нашого міста та місцевості.</p>
       <p class="description">У розділі Галлерая (Gallery) публікуються усі наявні в автора світлини.</p>
       <p class="description">Якщо у Вас є цікаві фото і Ви бажаєте ними поділитись, прошу надіслати їх на адресу електронної
         скриньки dobromyl.photo[равлик]gmail.com.</p>
@@ -35,17 +35,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
+<script setup lang="ts">
+import { ref } from 'vue';
 
-@Component
-export default class About extends Vue {
-    isShowLess = true;
+const isShowLess = ref(true);
 
-    toggleDocumentText(): void {
-        this.isShowLess = !this.isShowLess;
-    }
-}
+const toggleDocumentText = () => {
+  isShowLess.value = !isShowLess.value;
+};
 </script>
 
 <style scoped lang="scss">

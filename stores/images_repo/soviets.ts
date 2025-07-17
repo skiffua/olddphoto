@@ -1,4 +1,4 @@
-import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/store/constants'
+import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/stores/constants'
 import { linkSourceGenerator } from '@/components/helpers'
 import { Image } from '../photos'
 
@@ -150,18 +150,6 @@ export const imagesSoviets: Image[] = [
       YEARS_KEYS_TYPE.Y1945_1989,
       IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.CHILDREN,
-      IMAGES_KEYS_TYPE.BUILDING
-    ],
-    title: 'Саліна (поч. 1980-х)',
-    description: 'Період роботи санаторію',
-    source: `${linkSourceGenerator('Санаторій "Добромиль"', 'http://dobromyl.org/2018/02/sanatorij-dobromyl/')}`,
-    year: 1980
-  },
-  {
-    src: '/soviets/00067',
-    keys: [
-      YEARS_KEYS_TYPE.Y1945_1989,
-      IMAGES_KEYS_TYPE.SALINA,
       IMAGES_KEYS_TYPE.BUILDING
     ],
     title: 'Саліна (поч. 1980-х)',

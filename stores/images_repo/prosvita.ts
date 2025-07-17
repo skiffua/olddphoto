@@ -1,4 +1,4 @@
-import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/store/constants'
+import { IMAGES_KEYS_TYPE, YEARS_KEYS_TYPE } from '@/stores/constants'
 import { Image } from '../photos'
 
 const prosvitaSource = ''

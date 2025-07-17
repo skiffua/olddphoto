@@ -25,10 +25,14 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/types",
       "@types/jest"
     ]
   },
+  "include": [
+    "nuxt.config.ts",
+    "types",
+    "types/**/*.d.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

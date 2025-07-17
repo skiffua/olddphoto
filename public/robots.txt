@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dobromyl-historical-photos.netlify.app/sitemap.xml

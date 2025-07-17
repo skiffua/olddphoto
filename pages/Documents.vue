@@ -8,21 +8,10 @@
   </div>
 </template>
 
-<script lang="ts">
-    import { Component, Vue } from 'nuxt-property-decorator';
-    import { getModule } from 'vuex-module-decorators';
-    import DocumentsModule from "~/store/documents";
+<script setup lang="ts">
+import { storeToRefs } from 'pinia';
+import { useDocumentsStore } from '~/stores/documents';
 
-    @Component
-    export default class Documents extends Vue {
-        DocumentsInstance = getModule(DocumentsModule, this.$store);
-
-        get documents (): any {
-            return this.DocumentsInstance.articles
-        }
-    }
+const documentsStore = useDocumentsStore();
+const { documents } = storeToRefs(documentsStore);
 </script>
-
-<style scoped lang="scss">
-</style>
-

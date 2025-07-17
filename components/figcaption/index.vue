@@ -13,18 +13,12 @@
   </figcaption>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from 'nuxt-property-decorator'
-// import CustomSwipeComponent from './CustomSwipeComponent.vue'
+<script setup lang="ts">
+import { computed } from 'vue';
 
-@Component
-export default class FigcaptionComponent extends Vue {
-  @Prop() private item!: any
+const { item } = defineProps<{ item: any }>();
 
-  get itemKeys (): string {
-    return this.item.keys.join(', ')
-  }
-}
+const itemKeys = computed(() => item.keys.join(', '));
 </script>
 
 <style scoped lang="scss">

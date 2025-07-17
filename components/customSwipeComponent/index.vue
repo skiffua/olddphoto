@@ -317,7 +317,7 @@ export default {
         </a>
         <Figcaption
           :item="item"
-        ></Figcaption>
+        />
       </figure>
     </div>
 

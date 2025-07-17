@@ -25,35 +25,25 @@
   </article>
 </template>
 
-<script lang="ts">
-import { Component, Watch, Vue, Prop } from 'nuxt-property-decorator'
-import { getModule } from 'vuex-module-decorators'
-import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
-import DocumentsModule from "~/store/documents";
+<script setup lang="ts">
+import { ref } from 'vue';
+import { useDocumentsStore } from '~/stores/documents';
 
-@Component
-export default class Document extends Vue {
-    @Prop({ default: {} })
-    document!: {};
+// Проп document
+defineProps<{
+  document?: Record<string, any>;
+}>();
 
-    isShowLess = true;
+// Реактивна змінна
+const isShowLess = ref(true);
 
-    toggleDocumentText(): void {
-       this.isShowLess = !this.isShowLess
-    }
+// Метод toggleDocumentText
+const toggleDocumentText = () => {
+  isShowLess.value = !isShowLess.value;
+};
 
-    enter() {
-        console.log('enter')
-    }
-
-    afterEnter() {
-        console.log('afterEnter')
-    }
-
-    leave() {
-        console.log('leave')
-    }
-}
+// Ініціалізація Pinia стора (для сумісності, якщо потрібен)
+const documentsStore = useDocumentsStore();
 </script>
 
 <style scoped lang="scss">

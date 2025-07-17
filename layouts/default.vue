@@ -1,23 +1,12 @@
 <template>
   <div id="app-nuxt">
     <Navigation />
-    <Nuxt />
+    <NuxtPage />
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
-
-@Component
-export default class Layout extends Vue {
-  mounted() {
-    console.log('this.$route.', this.$route);
-  }
-}
-</script>
-
 <style lang="scss">
-@import '../styles';
+@use '../styles';
 
 html {
   font-family:

@@ -6,18 +6,22 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
+<script setup lang="ts">
+import { ref } from 'vue';
+import { definePageMeta } from '~/.nuxt/imports';
 
-@Component
-export default class Gallery extends Vue {
-    @Prop({ default: ''})
-    error!: any;
+// Проп error
+defineProps<{
+  error?: any;
+}>();
 
-    layout() { return 'error' }
+// Реактивна змінна
+const isImg404Loaded = ref(false);
 
-    isImg404Loaded = false;
- }
+// Визначення layout
+definePageMeta({
+  layout: 'error',
+});
 </script>
 
 <style scoped lang="scss">

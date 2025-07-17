@@ -2,7 +2,7 @@
   <div class="gallery">
     <div class="gallery-control-panel">
       <button class="gallery-buttons-keys"
-              :class="{'gallery-buttons-keys--isActive': PhotosInstance.isSomeFilterChecked}"
+              :class="{'gallery-buttons-keys--isActive': isSomeFilterChecked}"
               @click.prevent="resetAllFilters"
       >Усі</button>
       <button
@@ -11,29 +11,29 @@
         @click.prevent="getfilteredImages"
       >Фільтр</button>
       <div class="gallery-info-block"><i>
-        <span>{{imagesByFilter.length}} / {{PhotosInstance.imagesCount}}</span> світлин</i>
+        <span>{{imagesByFilter.length}} / {{imagesCount}}</span> світлин</i>
       </div>
-    </div>
+<!--    </div>-->
     <div class="gallery-control-panel gallery-control-panel--keys">
       <button
-        v-for="(filterButton, index) in Object.keys(PhotosInstance.wordsFiltersKeys)" :key="index"
+        v-for="(filterButton, index) in Object.keys(wordsFiltersKeys)" :key="index"
         class="gallery-buttons-keys gallery-buttons-keys--keys"
-        :class="{'gallery-buttons-keys--isActive': PhotosInstance.isWordsKeyFiltersChecked(filterButton)}"
+        :class="{'gallery-buttons-keys--isActive': isWordsKeyFiltersChecked(filterButton)}"
         :value="filterButton"
-        @click="(e) => PhotosInstance.setWordsFilterKey(e.target.value)"
+        @click="(e) => setWordsFilterKey(e.target.value)"
       >
-        {{PhotosInstance.wordsFiltersKeys[filterButton].name}}
+        {{wordsFiltersKeys[filterButton].name}}
       </button>
     </div>
     <div class="gallery-control-panel gallery-control-panel--years">
       <button
-        v-for="(filterButton, index) in Object.keys(PhotosInstance.yearsFiltersKeys)" :key="index"
+        v-for="(filterButton, index) in Object.keys(yearsFiltersKeys)" :key="index"
         class="gallery-buttons-keys gallery-buttons-keys--years"
-        :class="{'gallery-buttons-keys--isActive': PhotosInstance.isYearsKeyFiltersChecked(filterButton)}"
+        :class="{'gallery-buttons-keys--isActive': isYearsKeyFiltersChecked(filterButton)}"
         :value="filterButton"
-        @click="(e) => PhotosInstance.setYearsFilterKey(e.target.value)"
+        @click="(e) => setYearsFilterKey(e.target.value)"
       >
-        {{PhotosInstance.yearsFiltersKeys[filterButton].name}}
+        {{yearsFiltersKeys[filterButton].name}}
       </button>
     </div>
 
@@ -76,96 +76,108 @@
         {{index + 1}}
       </button>
     </div>
+    </div>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Watch, Vue, Prop } from 'nuxt-property-decorator'
-import { getModule } from 'vuex-module-decorators'
-import PhotosModule, { Image } from '~/store/photos'
-import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/store/constants'
+<script setup lang="ts">
+import { useRuntimeConfig } from 'nuxt/app';
+import { computed, ref, onBeforeMount } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import { storeToRefs } from 'pinia';
+import { usePhotosStore } from '~/stores/photos';
+import type { Image } from '~/stores/photos';
+import { IMAGES_KEYS, IMAGES_YEARS, STATIC_FOLDER_PATH } from '~/stores/constants';
 
-@Component
-export default class Album extends Vue {
-  PhotosInstance = getModule(PhotosModule, this.$store)
+// Проп page
+const props = defineProps<{ page?: number }>();
 
-    setGalleryPage(e: any): void {
-        this.activePage = e.target!.value
-        this.$router.replace({ path: `/gallery/${e.target!.value}/` })
-    }
+// Store
+const photosStore = usePhotosStore();
 
-    @Prop({ default: 1})
-    page!: number
+// Reactive state + getters from store
+const {
+  imagesByFilter,
+  imagesCount,
+  isSomeFilterChecked,
+  wordsFiltersKeys,
+  yearsFiltersKeys
+} = storeToRefs(photosStore);
 
-    activePage: number = this.page
+// Methods from store
+const {
+  isWordsKeyFiltersChecked,
+  isYearsKeyFiltersChecked,
+  setWordsFilterKey,
+  setYearsFilterKey,
+  resetAllFilters
+} = photosStore;
 
-    imagesByPageCount = 8
+// Local state
+const activePage = ref(props.page ?? 1);
+const imagesByPageCount = ref(8);
+const isFiltered = ref(false);
+const isCorrectUrl = ref(false);
+const imagesLoaded = ref(false);
 
-    isFiltered = false
+const config = useRuntimeConfig();
 
-    isCorrectUrl = false
+// Router
+const route = useRoute();
+const router = useRouter();
 
-    imagesLoaded = false
+// Validate URL
+onBeforeMount(() => {
+  const currentPage = route.params.page as string;
+  if (isNaN(+currentPage) || +currentPage < 1 || +currentPage > 17) {
+    router.replace({ path: '/gallery/1/' });
+  } else {
+    isCorrectUrl.value = true;
+  }
+});
 
-    get imagesPagesCount (): number {
-        if (this.imagesByFilter?.length % this.imagesByPageCount === 0) {
-            return this.imagesByFilter.length / this.imagesByPageCount
-        } else {
-            return Math.trunc(this.imagesByFilter.length / this.imagesByPageCount) + 1
-        }
-    }
+// Pagination logic
+const setGalleryPage = (e: Event) => {
+  const target = e.target as HTMLInputElement;
+  activePage.value = Number(target.value);
+  router.replace({ path: `/gallery/${target.value}/` });
+};
 
-    get imagesByFilter(): Image[] {
-      return this.PhotosInstance ? this.PhotosInstance.imagesByFilter : [];
-    }
+const imagesPagesCount = computed(() => {
+  const length = imagesByFilter.value.length;
+  return Math.ceil(length / imagesByPageCount.value);
+});
 
-    // get PhotosInstance(): any {
-    //   return getModule(PhotosModule, this.$store);
-    // }
+// Filter logic
+const getfilteredImages = () => {
+  if (activePage.value !== 1) {
+    router.replace({ path: '/gallery/1/' });
+  }
+};
 
-    beforeCreate (): void {
-        const currentPage: string = this.$route.params.page
-
-      // console.log('this.$route.params.page', this.$route.params.page);
-      // this.PhotosInstance = getModule(PhotosModule, this.$store)
-
-        if (isNaN(+currentPage) || (+currentPage < 1 || +currentPage > 17)) {
-            this.$router.replace({ path: '/gallery/1/' })
-        } else {
-            this.isCorrectUrl = true
-        }
-    }
-
-    getfilteredImages (e: any): void {
-        if (this.activePage !== 1) {
-            this.$router.replace({ path: '/gallery/1/' })
-        }
-    }
-
-    resetAllFilters (): void {
-        this.PhotosInstance.resetAllFilters()
-    }
-
-    get galleryImages (): any {
-        return this.imagesByFilter
-            .slice(this.page * this.imagesByPageCount - this.imagesByPageCount,
-                this.page * this.imagesByPageCount)
-            .map(image => ({
-                    src: 'https://dobromyl-historical-photos.netlify.app' + STATIC_FOLDER_PATH + image.src + '.jpg',
-                    thumbnail: STATIC_FOLDER_PATH + image.src + '_prev.jpg',
-                    w: image.w ? image.w : 1280,
-                    h: image.w ? image.w : 822,
-                    title: image.title,
-                    description: image.description,
-                    keys: image.keys.map(key => {
-                        const allKeys = { ...IMAGES_YEARS, ...IMAGES_KEYS }
-                        return allKeys[key]
-                    }),
-                    source: image.source
-                })
-            )
-    }
-}
+// Gallery images for display
+const galleryImages = computed(() =>
+  imagesByFilter.value
+    .slice(
+      activePage.value * imagesByPageCount.value - imagesByPageCount.value,
+      activePage.value * imagesByPageCount.value
+    )
+    .map((image: Image) => ({
+      src: `${config.public.apiBaseUrl}${STATIC_FOLDER_PATH}${image.src}.jpg`,
+      // src: `http://localhost:3000${STATIC_FOLDER_PATH}${image.src}.jpg`,
+      thumbnail: `${STATIC_FOLDER_PATH}${image.src}_prev.jpg`,
+      w: image.w ?? 1280,
+      h: image.h ?? 822,
+      title: image.title,
+      description: image.description,
+      alt: image.title,
+      keys: image.keys.map((key) => {
+        const allKeys = { ...IMAGES_YEARS, ...IMAGES_KEYS };
+        return allKeys[key];
+      }),
+      source: image.source
+    }))
+);
 </script>
 
 <style scoped lang="scss">
