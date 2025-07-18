@@ -10,10 +10,11 @@
         :disabled="isFiltered"
         @click.prevent="getfilteredImages"
       >Фільтр</button>
-      <div class="gallery-info-block"><i>
-        <span>{{imagesByFilter.length}} / {{imagesCount}}</span> світлин</i>
+      <div class="gallery-info-block">
+        <i><span>{{imagesByFilter.length}} / {{imagesCount}}</span> світлин</i>
       </div>
-<!--    </div>-->
+    </div>
+
     <div class="gallery-control-panel gallery-control-panel--keys">
       <button
         v-for="(filterButton, index) in Object.keys(wordsFiltersKeys)" :key="index"
@@ -25,6 +26,7 @@
         {{wordsFiltersKeys[filterButton].name}}
       </button>
     </div>
+
     <div class="gallery-control-panel gallery-control-panel--years">
       <button
         v-for="(filterButton, index) in Object.keys(yearsFiltersKeys)" :key="index"
@@ -53,7 +55,7 @@
       v-show="!imagesByFilter.length && !isFiltered && isCorrectUrl"
       class="no-photo-finded"
     >
-      <img src="../assets/no-photos.svg">
+      <img src="../assets/no-photos.svg" />
       <p>Вибачте, але світлин за параметрами фільтра не знайдено...</p>
       <p>Sorry, but images by filter keys, weren't found...</p>
     </div>
@@ -75,7 +77,6 @@
       >
         {{index + 1}}
       </button>
-    </div>
     </div>
   </div>
 </template>

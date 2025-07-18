@@ -17,6 +17,29 @@ export default defineNuxtConfig({
         { hid: 'og:image', property: 'og:image', content: 'https://dobromyl-historical-photos.netlify.app/photos/general/00051.jpg' },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      script: [
+        {
+          src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
+          body: true,
+          type: 'text/javascript'
+        },
+        {
+          children: `
+            window.addEventListener('load', function () {
+              if (window.kofiWidgetOverlay) {
+                window.kofiWidgetOverlay.draw('dobromylgallery', {
+                  'type': 'floating-chat',
+                  'floating-chat.donateButton.text': 'Support me',
+                  'floating-chat.donateButton.background-color': '#323842',
+                  'floating-chat.donateButton.text-color': '#fff'
+                });
+              }
+            });
+          `,
+          type: 'text/javascript',
+          body: true
+        },
+      ],
     },
   },
   ssr: true,
