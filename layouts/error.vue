@@ -1,8 +1,8 @@
 <template>
   <div class="page404" v-show="isImg404Loaded">
     <img @load="isImg404Loaded=true" src="../assets/404.svg">
-    <h1 v-if="error.statusCode === 404 && isImg404Loaded">Сторінку не знайдено </h1>
-    <h1 v-else-if="error.statusCode !== 404">Помилка... спробуйте перезавантажитись)</h1>
+    <h1 v-if="error?.statusCode === 404 && isImg404Loaded">Сторінку не знайдено </h1>
+    <h1 v-else-if="error?.statusCode !== 404">Помилка... спробуйте перезавантажитись)</h1>
   </div>
 </template>
 
