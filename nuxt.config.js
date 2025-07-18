@@ -64,7 +64,7 @@ export default defineNuxtConfig({
     exclude: ['/About'],
   },
   nitro: {
-    preset: 'static' // або 'static'
+    preset: 'netlify' // або 'static'
   },
   vite: {
     // css: {
