@@ -5,6 +5,7 @@ node_modules
 # Nuxt dev/build outputs
 .output
 .nuxt
+.netlify
 
 
 # local env files

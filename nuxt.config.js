@@ -51,6 +51,9 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/sitemap'
   ],
+  site: {
+    url: 'https://dobromyl-historical-photos.netlify.app'
+  },
   sitemap: {
     path: '/sitemap.xml',
     siteUrl: 'https://dobromyl-historical-photos.netlify.app',
@@ -59,6 +62,9 @@ export default defineNuxtConfig({
       loc: `/gallery/${i + 1}/`,
     })),
     exclude: ['/About'],
+  },
+  nitro: {
+    preset: 'netlify' // або 'static'
   },
   vite: {
     // css: {
